@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            position: relative;
+            width: 10rem;
+            height: 3rem;
+            border-radius: 10px;
+            cursor: pointer;
+            z-index: 4;
+        }
+
+        .btn-1,
+        .btn-2,
+        .btn-3 {
+            transition: 0.3s;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(51, 186, 231, 0.5);
+            border-radius: inherit;
+        }
+
+        .btn-1 {
+            background-color: rgb(51, 186, 231);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+        }
+
+        .box:hover {
+            >.btn-1 {
+                transform: translateY(-1rem);
+            }
+
+            >.btn-2 {
+                transform: translateY(-0.5rem);
+            }
+        }
+
+        .box:active {
+
+            >.btn-1,
+            .btn-2 {
+                transition: 0.1s;
+                transform: translateY(0rem);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="btn-1">Button 3</div>
+        <div class="btn-2"></div>
+        <div class="btn-3"></div>
+    </div>
+</body>
+
+</html>

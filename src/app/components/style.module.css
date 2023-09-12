@@ -1,0 +1,26 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+}
+.nav>:nth-child(2){
+    display: flex;
+    gap: 0.5rem;
+}
+.nav>:nth-child(2)>a{
+    text-decoration: none;
+}
+.portfolio>div{
+    padding: 0 10%;
+    text-align: center;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}

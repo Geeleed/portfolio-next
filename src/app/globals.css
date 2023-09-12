@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -71,14 +71,15 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
+  outline: 1px dashed;
+} */
+/* 
 html,
 body {
   max-width: 100vw;
@@ -88,20 +89,69 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+} */
+
+:root {
+  --main-color: #0c120c;
+  --main-color-2: #0c120c22;
+  --main-color-3: #0c120c33;
+  --main-color-4: #0c120c44;
+  --main-color-5: #0c120c55;
+  --main-color-6: #0c120c66;
+  --main-color-7: #0c120c77;
+  --main-color-8: #0c120c88;
+  --main-color-9: #0c120c99;
+  --main-color-a: #0c120caa;
+  --main-color-b: #0c120cbb;
+  --main-color-c: #0c120ccc;
+  --main-color-d: #0c120cdd;
+  --main-color-e: #0c120cee;
+  --main-color-f: #0c120cff;
+  --sub-color: #c7d6d5;
+  --sub-color-2: #c7d6d522;
+  --sub-color-3: #c7d6d533;
+  --sub-color-4: #c7d6d544;
+  --sub-color-5: #c7d6d555;
+  --tiny-color: #c20114;
+  --tiny-color-2: #c2011422;
+  --tiny-color-3: #c2011433;
+  --tiny-color-4: #c2011444;
+  --tiny-color-5: #c2011455;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* background-color: var(--main-color); */
+  color: var(--sub-color);
+  scroll-behavior: smooth;
+  /* outline: 1px dashed; */
+
+  /* glassmorphism */
+  /* background-color: #eeeeee99;
+  border: 1px solid #eeeeeedd;
+  backdrop-filter: blur(5px); */
+
+  /* neomorphism */
+  /* border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff; */
 }

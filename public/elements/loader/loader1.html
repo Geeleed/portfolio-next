@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .block {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        .b1 {
+            aspect-ratio: 1/1;
+            width: 2rem;
+            border-radius: 15%;
+            background-color: #555;
+            border: 3px solid #222;
+            animation: moveY 0.5s ease-in 0s infinite alternate;
+            transform-origin: center 150%;
+        }
+
+        @keyframes moveY {
+            0% {
+                transform: translateY(-2rem);
+            }
+            80% {
+                transform: scale(1) translateY(1.7rem);
+            }
+            100% {
+                transform: scale(1.5,0.7) translateY(2rem);
+                border-radius: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <div class="b1" style="animation-delay: 0s;"></div>
+        <div class="b1" style="animation-delay: 0.2s;"></div>
+        <div class="b1" style="animation-delay: 0.4s;"></div>
+    </div>
+</body>
+
+</html>

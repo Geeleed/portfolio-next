@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn-1</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .ly1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10rem;
+            height: 3rem;
+            border: 1px solid #222;
+            border-radius: 5px;
+            color: #eee;
+            cursor: pointer;
+            transition: 1s;
+            overflow: hidden;
+        }
+
+        .ly1::after {
+            content: "";
+            position: absolute;
+            border-radius: inherit;
+            background: linear-gradient(30deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            width: 11rem;
+            height: 11rem;
+            z-index: -1;
+            transition: 0.3s;
+        }
+
+        .ly1:hover::after {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ly1">Button 1</div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn-5</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #e8e8e8;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 10rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: inherit;
+            height: inherit;
+            cursor: pointer;
+            border-radius: 10px;
+            background: #e0e0e0;
+            box-shadow: 6px 6px 12px #b1b1b1,
+                -6px -6px 12px #ffffff;
+        }
+
+        .btn-1:hover {
+            transition: 1s;
+            background: linear-gradient(145deg, #f0f0f0, #cacaca);
+            box-shadow: 6px 6px 12px #b1b1b1,
+                -6px -6px 12px #ffffff;
+        }
+
+        .btn-1:active {
+            background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="btn-1">Button 5</div>
+    </div>
+</body>
+
+</html>
