@@ -1,0 +1,38 @@
+.main {
+    height: 30rem;
+    background-color: var(--main-color-e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 10%;
+    gap: 2rem;
+}
+
+.disk {
+    width: 300px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: 3px 3px 30px #000; */
+    border: 1px solid var(--sub-color);
+}
+.disk>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(1) contrast(1) grayscale(1) sepia(0) saturate(1);
+}
+.disk>div{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--tiny-color-5);
+}
+
+.text {
+    /* display: none; */
+    width: 40rem;
+}

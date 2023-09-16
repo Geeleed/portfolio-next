@@ -1,3 +1,4 @@
+
 // import Image from 'next/image'
 // import styles from './page.module.css'
 
@@ -94,28 +95,83 @@
 //   )
 // }
 
+// import React from 'react'
+// import css from './page.module.css'
+// import Portfolio from './components/portfolio/Portfolio'
+// import Navbar from './components/Navbar'
+// import Home from './components/Home'
+// import Profile from './components/Profile'
+// import Contact from './components/Contact'
+// import WebBoard from './components/WebBoard'
+
+
+// function Index() {
+//   return (
+//     <main className={css.main}>
+//       <Navbar/>
+//       <Home/>
+//       <Profile/>
+//       <Portfolio/>
+//       <Contact/>
+//       <WebBoard/>
+//       <footer>Surasak K</footer>
+//     </main>
+//   )
+// }
+
+// export default Index
+
 import React from 'react'
-import css from './page.module.css'
-import Portfolio from './components/portfolio/Portfolio'
+import page_style from './page.module.css'
+import Glassmorphism from './components/Glassmorphism'
+import Image from 'next/image'
+import ShowUI from './reuses/ShowUI'
+import PhotoEditor from './components/PhotoEditor'
+import styled from 'styled-components'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Profile from './components/Profile'
-import Contact from './components/Contact'
-import WebBoard from './components/WebBoard'
+import Head from 'next/head'
+import './globals.css'
+import './CSS.css'
 
+// function Page() {
+//   return (
+//     <main className={page_style.main}>
+//       Test Zone
+//       <div>
+//         <Glassmorphism/>
+//         <PhotoEditor/>
+//       </div>
+//       <section className={page_style.example}>
+//       </section>
+//       <ShowUI title={'Hello'} detail={'ไม่มีอะไรทั่งนั้น'} source={'#'}/>
+//     </main>
+//   )
+// }
 
-function Index() {
+// export default Page
+
+function Page() {
   return (
-    <main className={css.main}>
-      <Navbar/>
-      <Home/>
-      <Profile/>
-      <Portfolio/>
-      <Contact/>
-      <WebBoard/>
-      <footer>Surasak K</footer>
-    </main>
+    <>
+      {/* <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap')
+      </style> */}
+      {/* <Head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
+        />
+      </Head> */}
+      {/* <body style={{ fontFamily: 'Prompt, sans-serif' }}> */}
+      {/* <body> */}
+        <Navbar />
+        <Home />
+        <Profile />
+      {/* </body> */}
+    </>
   )
 }
 
-export default Index
+export default Page

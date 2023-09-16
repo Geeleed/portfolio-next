@@ -1,0 +1,76 @@
+.main {
+    height: 30rem;
+    background-color: var(--main-color-e);
+    /* background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'); */
+    background-image: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content>h1{
+    scale: 1.2;
+}
+.content>div{
+    display: flex;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+.content>div>button{
+    cursor: pointer;
+    /* border-radius: 0.5rem; */
+    width: 10rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 2px solid var(--sub-color);
+    font-size: 1.2rem;
+}
+.content>div>button:nth-child(1){
+    border: 2px solid var(--tiny-color);
+    background-color: var(--tiny-color);
+}
+
+.content>div>button:hover:nth-child(1){
+    background-color: var(--tiny-color-8);
+    border: 2px solid var(--tiny-color);
+}
+.content>div>button:hover:nth-child(2){
+    border: 2px solid var(--tiny-color);
+}
+.scroll__down{
+    scale: 2;
+    transform-origin: 0%;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: scroll__down 2s ease infinite;
+    opacity: 0;
+}
+@keyframes scroll__down {
+    0%{
+        opacity: 0;
+        bottom: 2rem;
+    }
+    70%{
+        opacity: 1;
+        bottom: 0.3rem;
+        /* font-size: 1.2rem; */
+    }
+    100%{
+        bottom: 0rem;
+        opacity: 0;
+    }
+}

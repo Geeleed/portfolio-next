@@ -1,21 +1,20 @@
 import React from 'react'
-import css from './style.module.css'
+import css from './Navbar.module.css'
+import Link from 'next/link'
 
 function Navbar() {
-  return (
-    <div>
-      <nav className={css.nav}>
-        <div>GEELEED</div>
-        <div>
-          <a href='#home'>Home</a>
-          <a href='#profile'>Profile</a>
-          <a href='#portfolio'>Portfolio</a>
-          <a href='#contact'>Contact</a>
-          <a href='#web__board'>Web Board</a>
+    return (
+        <div className={css.main}>
+            <Link href={'#'}>SURASAK KAEWPHO</Link>
+            <div>
+                <Link href={'#'}>Home</Link>
+                <Link href={'#'}>Profile</Link>
+                <Link href={'#'}>Portfolio</Link>
+                <Link href={'#'}>Contact</Link>
+                <Link href={'#'}>Web Board</Link>
+            </div>
         </div>
-      </nav>
-    </div>
-  )
+    )
 }
 
 export default Navbar

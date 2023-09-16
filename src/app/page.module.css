@@ -1,5 +1,7 @@
-
-.main>section{
-    min-height: 20rem;
-    padding-top: 4rem;
+.example{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 30rem;
 }

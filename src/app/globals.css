@@ -1,112 +1,3 @@
-/* :root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-} */
-
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  outline: 1px dashed;
-} */
-/* 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
-
 :root {
   --main-color: #0c120c;
   --main-color-2: #0c120c22;
@@ -128,30 +19,43 @@ body {
   --sub-color-3: #c7d6d533;
   --sub-color-4: #c7d6d544;
   --sub-color-5: #c7d6d555;
+  --sub-color-6: #c7d6d566;
+  --sub-color-7: #c7d6d577;
+  --sub-color-8: #c7d6d588;
+  --sub-color-9: #c7d6d599;
+  --sub-color-a: #c7d6d5aa;
+  --sub-color-b: #c7d6d5bb;
+  --sub-color-c: #c7d6d5cc;
+  --sub-color-d: #c7d6d5dd;
+  --sub-color-e: #c7d6d5ee;
+  --sub-color-f: #c7d6d5ff;
   --tiny-color: #c20114;
   --tiny-color-2: #c2011422;
   --tiny-color-3: #c2011433;
   --tiny-color-4: #c2011444;
   --tiny-color-5: #c2011455;
+  --tiny-color-6: #c2011466;
+  --tiny-color-7: #c2011477;
+  --tiny-color-8: #c2011488;
+  --tiny-color-9: #c2011499;
+  --tiny-color-a: #c20114aa;
+  --tiny-color-b: #c20114bb;
+  --tiny-color-c: #c20114cc;
+  --tiny-color-d: #c20114dd;
+  --tiny-color-e: #c20114ee;
+  --tiny-color-f: #c20114ff;
 }
 
 * {
+  transition: all 0.1s;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* background-color: var(--main-color); */
   color: var(--sub-color);
   scroll-behavior: smooth;
-  /* outline: 1px dashed; */
+}
 
-  /* glassmorphism */
-  /* background-color: #eeeeee99;
-  border: 1px solid #eeeeeedd;
-  backdrop-filter: blur(5px); */
-
-  /* neomorphism */
-  /* border-radius: 50px;
-  background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff; */
+::selection {
+  background: var(--tiny-color);
+  color: var(--main-color);
 }
