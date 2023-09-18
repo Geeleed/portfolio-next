@@ -1,27 +1,29 @@
 .main {
-    height: 30rem;
-    background-color: var(--main-color-e);
+    /* height: 25rem; */
+    background-color: var(--main-color);
+    /* background-color: var(--tiny-color); */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 10%;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .disk {
-    width: 300px;
+    width: 500px;
     aspect-ratio: 1;
     overflow: hidden;
     position: relative;
-    /* box-shadow: 3px 3px 30px #000; */
+    box-shadow: 5px 5px var(--sub-color);
     border: 1px solid var(--sub-color);
+    margin: 2rem 0;
 }
 .disk>img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    filter: brightness(1) contrast(1) grayscale(1) sepia(0) saturate(1);
+    filter: brightness(1) contrast(1.2) grayscale(1) sepia(0) saturate(1);
 }
 .disk>div{
     position:absolute;
@@ -33,6 +35,24 @@
 }
 
 .text {
-    /* display: none; */
-    width: 40rem;
+    max-width: 40rem;
+}
+.text>h1{
+    font-size: 4rem;
+}
+.text>p{
+    font-size: 1.2rem;
+}
+.text>div{
+    /* background-color: var(--sub-color-5); */
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    gap: 0.5rem;
+}
+.text>div>img{
+    height: 50px;
+    width: auto;
 }

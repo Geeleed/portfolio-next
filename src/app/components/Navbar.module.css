@@ -1,6 +1,11 @@
 
 .main {
-    background-color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--main-color-8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: var(--sub-color);
     height: 3rem;
     display: flex;

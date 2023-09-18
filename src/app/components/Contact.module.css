@@ -1,0 +1,52 @@
+.main{
+    height: 30rem;
+    background-color: var(--tiny-color);
+    position: relative;
+    /* background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'); */
+    background-image: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40rem;
+    height: 90%;
+    gap: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.form>input[type='text']{
+    padding: 0.5rem;
+    outline: none;
+    color: var(--sub-color);
+    border: none;
+    background-color: var(--main-color-8);
+    font-size: 1.1rem;
+}
+.form>textarea{
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    height: 15rem;
+    padding: 0.5rem;
+    color: var(--sub-color);
+    background-color: var(--main-color-8);
+}
+.form>input[type='submit']{
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-size: 1.2rem;
+}
+.form>input[type='submit']:hover{
+    border: 1px solid var(--sub-color);
+    background-color: var(--tiny-color);
+    font-weight: 900;
+}

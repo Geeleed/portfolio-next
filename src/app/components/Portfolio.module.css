@@ -1,0 +1,49 @@
+.miniProject {
+    background-color: var(--main-color-e);
+    /* background-color: var(--tiny-color); */
+    padding: 3.5rem 0;
+}
+.basicUI{
+    background-color: var(--main-color-f);
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3.5rem 0;
+}
+
+.pad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.main2 {
+    width: 20rem;
+    aspect-ratio: 1;
+    background-color: var(--main-color);
+    /* border: 1px solid var(--sub-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main2:hover {
+    background-color: var(--sub-color);
+}
+
+.main2:hover>h1 {
+    color: var(--tiny-color);
+}
+.main3{
+    height: 20rem;
+    aspect-ratio: 2/1;
+    background-color: var(--tiny-color);
+    /* border: 1px solid var(--sub-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

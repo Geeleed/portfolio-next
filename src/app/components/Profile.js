@@ -10,8 +10,23 @@ function Profile() {
         <div></div>
       </div>
       <div className={css.text}>
-        <h1>Profile</h1>
+        <h1>SURASAK KAEWPHO</h1>
         <p>จบฟิสิกส์และต้องการทำงานด้าน Web Developer มีทักษะคอมพิวเตอร์เบื้องต้น ศึกษาการพัฒนาเว็บไซต์ด้วยตนเอง ใช้ภาษา HTML CSS JavaScript React(Next.JS) เพื่อสร้างเว็บให้มีหน้าตาทันสมัยตามต้องการ สามารถเชื่อมต่อจัดการข้อมูลใน database และใช้งานหรือพัฒนา API ด้วย Express/Python ในระดับเบื้องต้นได้ (โปรดพิจารณาผลงานใน portfolio) วิธีเรียนรู้หรือทำงานโดยส่วนตัวเป็นแบบ OKR ตั้งหัวข้อโปรเจ็กก่อนจากนั้นจึงหาเครื่องมือด้วยวิธีการต่าง ๆ ที่จะทำให้บรรลุเป้าหมายของโปรเจ็ก</p>
+        <div>
+          <Image src={'/images/logo/pngwing.com (16).png'} width={42} height={47} alt=''/>
+          <Image src={'/images/logo/pngwing.com (17).png'} width={52} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (18).png'} width={50} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (14).png'} width={50} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (15).png'} width={50} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (3).png'} width={50} height={50} alt=''/>
+          <Image style={{filter:'invert(1)'}} src={'/images/logo/pngwing.com (7).png'} width={60} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (9).png'} width={50} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (11).png'} width={60} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (19).png'} width={50} height={50} alt=''/>
+          <Image style={{filter:'invert(1)'}} src={'/images/logo/512x512-logo-27148.png'} width={50} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com.png'} width={50} height={50} alt=''/>
+          <Image src={'/images/logo/pngwing.com (10).png'} width={50} height={50} alt=''/>
+        </div>
       </div>
     </div>
   )
