@@ -6,7 +6,7 @@ import { Anim, XY, Sq, Sq2 } from './Home'
 function Contact() {
   return (
     <div className={css0.main}>
-      <Anim key={'keyanimcontact'} numList={[20, 5]} elementList={[<Sq key={''} />, <Sq2 key={''} />]} />
+      <Anim numList={[20, 5]} elementList={[<Sq key={''} />, <Sq2 key={''} />]} />
       <form className={css0.form}>
         <h1>Contact</h1>
         <input type="text" placeholder='หัวข้อ' />
