@@ -22,9 +22,9 @@ function Page() {
     <>
       <Navbar />
       <Home />
-      <Profile />
-      <Portfolio />
-      <Contact />
+      {/* <Profile /> */}
+      {/* <Portfolio /> */}
+      {/* <Contact /> */}
       <ContactBar/>
     </>
   )
