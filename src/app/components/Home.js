@@ -6,7 +6,7 @@ import Link from 'next/link'
 function Home() {
     return (
         <main className={css.main}>
-            <Anim key={'anim-home'} numList={[20, 5]} elementList={[<Sq key={Math.random()} />, <Sq2 key={Math.random()} />]} />
+            <Anim numList={[20, 5]} elementList={[<Sq />, <Sq2 />]} />
             <div style={{ width: 'inherit', height: 'inherit', backgroundColor: '#000000aa' }}></div>
             <div className={css.content}>
                 <h1>PORTFOLIO</h1>
@@ -33,11 +33,9 @@ function Anim({ numList, elementList }) {
     for (let i = 0; i < elementList.length; i++) {
         let element = elementList[i];
         for (let j = 0; j < numList[i]; j++) {
-            // elems.push(<div key={`${i}-${j}`}>{element}</div>)
-            elems.push(<Sq key={`${i}-${j}`}/>)
+            elems.push(React.cloneElement(element, { key: `${i}-${j}` }))
         }
     }
-
     return (
         <div className={css.anim__main}>
             {elems}
@@ -53,7 +51,7 @@ const XY = (r, deg) => {
 function Sq() {
     const [X, Y] = XY(1000, Math.random() * 360)
     return (
-        <div key={Math.random()} className={css.sq} style={{
+        <div className={css.sq} style={{
             offset: `path('M0,0 L${parseInt(X)},${parseInt(Y)}') 0deg`,
             animationDelay: `${Math.random() * 3}s`,
             animationDuration: `${Math.random() * 2 + 1}s`
@@ -63,7 +61,7 @@ function Sq() {
 function Sq2() {
     const [X, Y] = XY(1000, Math.random() * 360)
     return (
-        <div key={Math.random()} className={css.sq2} style={{
+        <div className={css.sq2} style={{
             offset: `path('M0,0 L${parseInt(X)},${parseInt(Y)}') 0deg`,
             animationDelay: `${Math.random() * 3}s`,
             animationDuration: `${Math.random() * 2 + 1}s`,
@@ -71,4 +69,4 @@ function Sq2() {
         }}></div>
     )
 }
-export {Anim,XY,Sq,Sq2}
+export { Anim, XY, Sq, Sq2 }
