@@ -34,7 +34,7 @@ function Anim({ numList, elementList }) {
         let element = elementList[i];
         for (let j = 0; j < numList[i]; j++) {
             // elems.push(React.cloneElement(element, { key: `${i}-${j}` }))
-            elems.push(<Sq2 key={`${i}-${j}`}/>)
+            elems.push(<Sq key={`${i}-${j}`}/>)
 
         }
     }
