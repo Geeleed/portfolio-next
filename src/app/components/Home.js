@@ -34,7 +34,7 @@ function Anim({ numList, elementList }) {
         let element = elementList[i];
         for (let j = 0; j < numList[i]; j++) {
             // elems = [...elems, element]
-            elems.push(<div key={Math.random()}>{element}</div>)
+            elems.push(<div key={`${i}-${j}`}>{element}</div>)
         }
     }
 
