@@ -6,7 +6,7 @@ import Link from 'next/link'
 function Home() {
     return (
         <main className={css.main}>
-            <Anim numList={[20, 5]} elementList={[<Sq />, <Sq2 />]} />
+            <Anim key={'2'} numList={[20, 5]} elementList={[<Sq />, <Sq2 />]} />
             <div style={{ width: 'inherit', height: 'inherit', backgroundColor: '#000000aa' }}></div>
             <div className={css.content}>
                 <h1>PORTFOLIO</h1>
