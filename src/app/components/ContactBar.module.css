@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main>a{
+    text-decoration: none;
+    /* background-color: var(--main-color); */
+    background-color: rgba(0, 0, 0);
+    position: relative;
+    height: 10rem;
+    border-bottom: 2px solid var(--sub-color);
+    border-top: 2px solid var(--sub-color);
+}
+.main>a>h1{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    font-size: 6rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.main>a>div{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(90deg,black 30%,var(--tiny-color));
+    transition: all 0.3s;
+}
+.main>a:hover>div{
+    width: 100%;
+}
+.main>a:hover>h1{
+    color: var(--tiny-color);
+    transform: skewX(-20deg);
+}

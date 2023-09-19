@@ -5,11 +5,11 @@ import Link from 'next/link'
 function Navbar() {
     return (
         <div className={css.main}>
-            <Link href={'#'}>SURASAK KAEWPHO</Link>
+            <Link href={'#home'}>SURASAK KAEWPHO</Link>
             <div>
-                <Link href={'#'}>Home</Link>
-                <Link href={'#'}>Profile</Link>
-                <Link href={'#'}>Portfolio</Link>
+                <Link href={'#home'}>Home</Link>
+                <Link href={'#profile'}>Profile</Link>
+                <Link href={'#portfolio'}>Portfolio</Link>
                 <Link href={'#'}>Contact</Link>
                 <Link href={'#'}>Web Board</Link>
             </div>

@@ -15,6 +15,7 @@ import './CSS.css'
 
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import ContactBar from './components/ContactBar'
 
 function Page() {
   return (
@@ -24,6 +25,7 @@ function Page() {
       <Profile />
       <Portfolio />
       <Contact />
+      <ContactBar/>
     </>
   )
 }
