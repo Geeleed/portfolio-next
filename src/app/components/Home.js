@@ -6,7 +6,7 @@ import Link from 'next/link'
 function Home() {
     return (
         <main className={css.main}>
-            <Anim key={'anim-home'} numList={[20, 5]} elementList={[<Sq />, <Sq2 />]} />
+            <Anim numList={[20, 5]} elementList={[<Sq />, <Sq2 />]} />
             <div style={{ width: 'inherit', height: 'inherit', backgroundColor: '#000000aa' }}></div>
             <div className={css.content}>
                 <h1>PORTFOLIO</h1>
@@ -33,13 +33,20 @@ function Anim({ numList, elementList }) {
     for (let i = 0; i < elementList.length; i++) {
         let element = elementList[i];
         for (let j = 0; j < numList[i]; j++) {
-            elems.push(React.cloneElement(element, { key: `${i}-${j}` }))
+            // elems.push(React.cloneElement(element, { key: `${i}-${j}` }))
+            elems.push(<Sq2 key={`${i}-${j}`}/>)
+
         }
     }
     return (
         <div className={css.anim__main}>
             {elems}
         </div>
+    )
+}
+const EMT = () =>{
+    return(
+        <></>
     )
 }
 const XY = (r, deg) => {

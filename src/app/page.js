@@ -21,7 +21,7 @@ function Page() {
   return (
     <>
       <Navbar />
-      <Home key={'key-home'} />
+      <Home />
       <Profile />
       <Portfolio />
       <Contact />
