@@ -33,7 +33,6 @@ function Anim({ numList, elementList }) {
     for (let i = 0; i < elementList.length; i++) {
         let element = elementList[i];
         for (let j = 0; j < numList[i]; j++) {
-            // elems = [...elems, element]
             elems.push(<div key={`${i}-${j}`}>{element}</div>)
         }
     }
