@@ -108,7 +108,7 @@
     transform-origin: center center;
     opacity: 0;
     border: 2px solid black;
-    border-radius: 100%;
+    /* border-radius: 100%; */
 }
 
 @keyframes expand {
