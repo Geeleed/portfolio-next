@@ -33,20 +33,14 @@ function Anim({ numList, elementList }) {
     for (let i = 0; i < elementList.length; i++) {
         let element = elementList[i];
         for (let j = 0; j < numList[i]; j++) {
-            // elems.push(React.cloneElement(element, { key: `${i}-${j}` }))
-            elems.push(<Sq key={`${i}-${j}`}/>)
-
+            elems.push(React.cloneElement(element, { key: `${i}-${j}` }))
+            // elems.push(<Sq key={`${i}-${j}`}/>)
         }
     }
     return (
         <div className={css.anim__main}>
             {elems}
         </div>
-    )
-}
-const EMT = () =>{
-    return(
-        <></>
     )
 }
 const XY = (r, deg) => {
