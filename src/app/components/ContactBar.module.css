@@ -36,5 +36,6 @@
 }
 .main>a:hover>h1{
     color: var(--tiny-color);
-    transform: skewX(-20deg);
+    transform: translateX(7rem) scaleX(1.2) skewX(-20deg);
+    filter: drop-shadow(-5px 0px white);
 }

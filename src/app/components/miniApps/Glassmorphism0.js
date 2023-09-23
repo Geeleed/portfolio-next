@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
-import css from './Glassmorphism.module.css'
-function Glassmorphism() {
+import css from './Glassmorphism0.module.css'
+function Glassmorphism0() {
   const [color, setColor] = useState('#eeeeee')
   const [opacity, setOpacity] = useState(0.05)
   const [borderOpacity, setBorderOpacity] = useState(0.5)
@@ -43,7 +43,7 @@ function Glassmorphism() {
   )
 }
 
-export default Glassmorphism
+export default Glassmorphism0
 
 function rgba(rgbHex, a) {
   let r = rgbHex[1] + rgbHex[2]

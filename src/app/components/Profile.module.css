@@ -10,13 +10,14 @@
 }
 
 .disk {
-    width: 500px;
+    width: 300px;
     aspect-ratio: 1;
     overflow: hidden;
     position: relative;
-    box-shadow: 5px 5px var(--sub-color);
+    box-shadow: 15px 15px var(--sub-color);
     border: 1px solid var(--sub-color);
     margin: 2rem 0;
+    margin-right: 3rem;
 }
 .disk>img{
     position: absolute;
@@ -53,6 +54,9 @@
     gap: 0.5rem;
 }
 .text>div>img{
-    height: 50px;
+    height: 37px;
     width: auto;
+}
+.text>div>img:hover{
+    scale: 1.4;
 }

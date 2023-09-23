@@ -11,7 +11,7 @@ function Profile() {
       </div>
       <div className={css.text}>
         <h1>SURASAK KAEWPHO</h1>
-        <p>จบฟิสิกส์และต้องการทำงานด้าน Web Developer มีทักษะคอมพิวเตอร์เบื้องต้น ศึกษาการพัฒนาเว็บไซต์ด้วยตนเอง ใช้ภาษา HTML CSS JavaScript React(Next.JS) เพื่อสร้างเว็บให้มีหน้าตาทันสมัยตามต้องการ สามารถเชื่อมต่อจัดการข้อมูลใน database และใช้งานหรือพัฒนา API ด้วย Express/Python ในระดับเบื้องต้นได้ (โปรดพิจารณาผลงานใน portfolio) วิธีเรียนรู้หรือทำงานโดยส่วนตัวเป็นแบบ OKR ตั้งหัวข้อโปรเจ็กก่อนจากนั้นจึงหาเครื่องมือด้วยวิธีการต่าง ๆ ที่จะทำให้บรรลุเป้าหมายของโปรเจ็ก</p>
+        <p>จบฟิสิกส์และต้องการทำงานด้าน Web Developer มีทักษะคอมพิวเตอร์เบื้องต้น ศึกษาการพัฒนาเว็บไซต์ด้วยตนเอง ใช้ภาษา HTML CSS JavaScript React(Next.JS) เพื่อสร้างเว็บให้มีหน้าตาทันสมัยตามต้องการ สามารถเชื่อมต่อจัดการข้อมูลใน database และใช้งานหรือพัฒนา API ด้วย Express/Python ในระดับเบื้องต้นได้</p>
         <div>
           <Image src={'/images/logo/pngwing.com (16).png'} width={42} height={47} alt=''/>
           <Image src={'/images/logo/pngwing.com (17).png'} width={52} height={50} alt=''/>
