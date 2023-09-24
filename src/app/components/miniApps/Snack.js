@@ -33,7 +33,7 @@ function Snack() {
     weightRef.current.value = ''
   }
 
-  function remove(id) {
+  function remover(id) {
     let newData = []
     for (let i = 0; i < data.length; i++) { if (data[i].id != id) { newData.push(data[i]) } }
     setData(newData)
@@ -43,10 +43,10 @@ function Snack() {
     maxScore = Math.max(...data.map(data => data.score))
     normalize = data.map(elem => ({ id: elem.id, price: elem.price, weight: elem.weight, normScore: elem.score / maxScore }))
     setList(normalize.map(elem => (
-      <List key={elem.id} id={elem.id} price={elem.price} weight={elem.weight} score={elem.normScore} remove={remove} />
+      <List key={elem.id} id={elem.id} price={elem.price} weight={elem.weight} score={elem.normScore} remove={remover} />
     )))
     priceRef.current.focus()
-  }, [data,remove])
+  }, [data])
   return (
     <div className={css.main}>
       <header className={css.header}>
