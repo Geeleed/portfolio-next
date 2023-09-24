@@ -18,6 +18,8 @@ import ContactBar from './components/ContactBar'
 import Glassmorphism from './components/miniApps/Glassmorphism'
 import LoadingPage from './components/LoadingPage'
 import MiniAppsPage from './components/miniApps/MiniAppsPage'
+import Snack from './components/miniApps/Snack'
+import RateExchange from './components/miniApps/RateExchange'
 
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +35,12 @@ function Page() {
         <Portfolio />
         <Contact />
         <ContactBar />
-        <MiniAppsPage/>
+        {/* <MiniAppsPage/> */}
+        <div>
+          <Glassmorphism/><br/>
+          <Snack/><br/>
+          <RateExchange/><br/>
+        </div>
       </>
     )
     setLoaded(data)

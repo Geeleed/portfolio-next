@@ -7,7 +7,7 @@ import RateExchange from './RateExchange'
 
 function MiniAppsPage() {
   return (
-    <div style={{display:'flex',justifyContent:'center',backgroundColor:'var(--main-color)'}}>
+    <div >
       <Glassmorphism /><br />
       <Snack /><br />
       <RateExchange /><br />
