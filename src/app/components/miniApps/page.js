@@ -11,9 +11,9 @@ function Page() {
         <Glassmorphism/>
         <br/>
         {/* <Glassmorphism0/> */}
-        <Snack/>
+        {/* <Snack/> */}
         <br/>
-        <RateExchange/>
+        {/* <RateExchange/> */}
         <br/>
     </div>
   )
