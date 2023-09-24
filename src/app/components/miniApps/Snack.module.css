@@ -1,6 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/agency-fb');
 
 .main * {
+    @import url('https://fonts.cdnfonts.com/css/agency-fb');
     font-family: 'Agency FB', sans-serif;
     /* transition: unset; */
 }
