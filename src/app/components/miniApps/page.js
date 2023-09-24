@@ -9,12 +9,12 @@ function Page() {
   return (
     <div>
         {/* <Glassmorphism/> */}
-        <br/>
+        {/* <br/> */}
         {/* <Glassmorphism0/> */}
         {/* <Snack/> */}
-        <br/>
+        {/* <br/> */}
         {/* <RateExchange/> */}
-        <br/>
+        {/* <br/> */}
     </div>
   )
 }
