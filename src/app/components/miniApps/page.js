@@ -1,11 +1,11 @@
 import React from 'react'
-import Glassmorphism from '../Glassmorphism'
-import '../../../CSS.css'
-import Glassmorphism0 from '../Glassmorphism0'
-import Snack from '../Snack'
-import RateExchange from '../RateExchange'
+import Glassmorphism from './Glassmorphism'
+import '../../CSS.css'
+import Glassmorphism0 from './Glassmorphism0'
+import Snack from './Snack'
+import RateExchange from './RateExchange'
 
-function page() {
+function Page() {
   return (
     <div>
         {/* <Glassmorphism/> */}
@@ -19,7 +19,7 @@ function page() {
   )
 }
 
-export default page
+export default Page
 
 // import React from 'react'
 
