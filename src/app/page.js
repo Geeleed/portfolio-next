@@ -15,9 +15,9 @@ import './CSS.css'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import ContactBar from './components/ContactBar'
-import Glassmorphism from './components/miniApps/Glassmorphism'
+// import Glassmorphism from './components/miniApps/Glassmorphism'
 import LoadingPage from './components/LoadingPage'
-import MiniAppsPage from './components/miniApps/MiniAppsPage'
+// import MiniAppsPage from './components/miniApps/MiniAppsPage'
 import Snack from './components/miniApps/Snack'
 import RateExchange from './components/miniApps/RateExchange'
 
@@ -37,7 +37,7 @@ function Page() {
         <ContactBar />
         {/* <MiniAppsPage/> */}
         <div>
-          <Glassmorphism/><br/>
+          {/* <Glassmorphism/><br/> */}
           <Snack/><br/>
           <RateExchange/><br/>
         </div>
