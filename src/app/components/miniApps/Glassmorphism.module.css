@@ -45,7 +45,8 @@
     /* background: linear-gradient(-60deg, rgb(255, 255, 255) 10%, rgb(0, 0, 0) 50%,rgb(0, 0, 0) 70%, rgb(255, 255, 255) 90%); */
     /* filter:drop-shadow( 5px 5px 30px #00000075); */
 }
-.glass div:hover{
+
+.glass div:hover {
     opacity: 0.7;
     rotate: 10deg;
 }
@@ -119,10 +120,10 @@
     /* background-color: rgba(165, 42, 42, 0.311); */
     background-color: #00000000;
 }
-.ctrl>div>input[type='text']{
-    /* background-color: rgba(165, 42, 42, 0.311); */
 
-}
+/* .ctrl>div>input[type='text']{ */
+/* background-color: rgba(165, 42, 42, 0.311); */
+/* } */
 .ctrl>div>input[type='text']::placeholder {
     color: #000;
 }
@@ -137,23 +138,26 @@
     width: 70%;
     height: 100%;
 }
-.ctrl>div>input[type='color']{
+
+.ctrl>div>input[type='color'] {
     background-color: transparent;
     border: none;
     opacity: .5;
     cursor: pointer;
     transition: all 0.3s;
 }
-.ctrl>div>input[type='color']:hover{
+
+.ctrl>div>input[type='color']:hover {
     opacity: 1;
 }
 
-.inputRange{
+.inputRange {
     appearance: none;
     background-color: transparent;
     cursor: pointer;
 }
-.inputRange::-webkit-slider-thumb{
+
+.inputRange::-webkit-slider-thumb {
     appearance: none;
     /* background-color: var(--tiny-color); */
     background-color: yellow;
@@ -165,7 +169,8 @@
     /* border: 0px solid yellow; */
     opacity: .7;
 }
-.inputRange::-webkit-slider-thumb:hover{
+
+.inputRange::-webkit-slider-thumb:hover {
     /* border: 5px solid yellow; */
     border: 5px solid rgb(0, 0, 0);
     scale: 0.7;
@@ -173,12 +178,13 @@
     opacity: 1;
     /* border-radius: 100%; */
 }
-.inputRange::-webkit-slider-runnable-track{
-    /* background-color: var(--main-color-c); */
-    /* background-color: rgba(165, 42, 42, 0.311); */
-    /* height: 1rem; */
-    /* height: auto; */
-}
+
+/* .inputRange::-webkit-slider-runnable-track{ */
+/* background-color: var(--main-color-c); */
+/* background-color: rgba(165, 42, 42, 0.311); */
+/* height: 1rem; */
+/* height: auto; */
+/* } */
 
 /* .Range{
     display: flex;

@@ -38,8 +38,8 @@ function Page() {
         {/* <MiniAppsPage/> */}
         <div>
           <Glassmorphism/><br/>
-          {/* <Snack/><br/> */}
-          {/* <RateExchange/><br/> */}
+          <Snack/><br/>
+          <RateExchange/><br/>
         </div>
       </>
     )
