@@ -15,11 +15,12 @@ import './CSS.css'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import ContactBar from './components/ContactBar'
-import Glassmorphism from './components/miniApps/Glassmorphism'
 import LoadingPage from './components/LoadingPage'
 // import MiniAppsPage from './components/miniApps/MiniAppsPage'
+// import Glassmorphism from './components/miniApps/Glassmorphism'
 import Snack from './components/miniApps/Snack'
 import RateExchange from './components/miniApps/RateExchange'
+import Glassmorphism from './components/miniApps/Glassmorphism'
 
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
