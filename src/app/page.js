@@ -37,11 +37,6 @@ function Page() {
         <Contact />
         <ContactBar />
         {/* <MiniAppsPage/> */}
-        <div>
-          {/* <Glassmorphism/><br/> */}
-          <Snack/><br/>
-          <RateExchange/><br/>
-        </div>
       </>
     )
     setLoaded(data)
