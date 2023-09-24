@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Glassmorphism from './Glassmorphism'
 import '../../CSS.css'
@@ -6,8 +7,7 @@ import RateExchange from './RateExchange'
 
 function MiniAppsPage() {
   return (
-    <div>
-      Hello
+    <div style={{display:'flex',justifyContent:'center',backgroundColor:'var(--main-color)'}}>
       <Glassmorphism /><br />
       <Snack /><br />
       <RateExchange /><br />
