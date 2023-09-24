@@ -20,7 +20,7 @@ import LoadingPage from './components/LoadingPage'
 // import Glassmorphism from './components/miniApps/Glassmorphism'
 import Snack from './components/miniApps/Snack'
 import RateExchange from './components/miniApps/RateExchange'
-import Glassmorphism from './components/miniApps/Glassmorphism'
+// import Glassmorphism from './components/miniApps/Glassmorphism'
 
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,7 +38,7 @@ function Page() {
         <ContactBar />
         {/* <MiniAppsPage/> */}
         <div>
-          <Glassmorphism/><br/>
+          {/* <Glassmorphism/><br/> */}
           <Snack/><br/>
           <RateExchange/><br/>
         </div>
