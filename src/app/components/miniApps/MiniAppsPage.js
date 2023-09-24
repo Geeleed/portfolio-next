@@ -1,21 +1,21 @@
-'use client'
-import React from 'react'
-import Glassmorphism from './Glassmorphism'
-import '../../CSS.css'
-import Snack from './Snack'
-import RateExchange from './RateExchange'
+// 'use client'
+// import React from 'react'
+// import Glassmorphism from './Glassmorphism'
+// import '../../CSS.css'
+// import Snack from './Snack'
+// import RateExchange from './RateExchange'
 
-function MiniAppsPage() {
-  return (
-    <div >
-      <Glassmorphism /><br />
-      <Snack /><br />
-      <RateExchange /><br />
-    </div>
-  )
-}
+// function MiniAppsPage() {
+//   return (
+//     <div >
+//       <Glassmorphism /><br />
+//       <Snack /><br />
+//       <RateExchange /><br />
+//     </div>
+//   )
+// }
 
-export default MiniAppsPage
+// export default MiniAppsPage
 
 // import React from 'react'
 
@@ -26,3 +26,13 @@ export default MiniAppsPage
 // }
 
 // export default Page
+
+import React from 'react'
+
+function MiniAppsPage() {
+  return (
+    <div>MiniAppsPage</div>
+  )
+}
+
+export default MiniAppsPage
