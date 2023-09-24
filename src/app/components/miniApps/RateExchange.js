@@ -49,7 +49,7 @@ function RateExchange() {
         } else if ((click2 || recentClick == 2) && cur1 && cur2) {
             setInput1(convert(input2, conv[cur2], conv[cur1]))
         }
-    }, [input1, input2, cur1, cur2])
+    }, [input1, input2, cur1, cur2, recentClick])
     useEffect(() => {
         fetch('https://open.er-api.com/v6/latest/usd')
             .then(res => res.json())
@@ -65,7 +65,7 @@ function RateExchange() {
             <header className={css.header}>
                 <div></div>
                 <h1> RATE EXCHANGE </h1>
-                <Image src={'/svg/bank.svg'} objectFit='contain' fill />
+                <Image src={'/svg/bank.svg'} objectFit='contain' fill alt=''/>
             </header>
             <div>
                 <input
@@ -101,14 +101,14 @@ function Aside({ name, curSupport, setReturn }) {
     return (
         <aside className={css.aside}>
             <div className={css.pad1}>
-                {['THB', 'USD', 'JPY', 'KRW', 'GBP', 'CNY'].map(i => <div className={css.btnIO}><input type='radio' name={name} id={i} value={i} onChange={e => setReturn(e.target.value)} /><label>{i}</label></div>)}
+                {['THB', 'USD', 'JPY', 'KRW', 'GBP', 'CNY'].map(i => <div key={i} className={css.btnIO}><input type='radio' name={name} id={i} value={i} onChange={e => setReturn(e.target.value)} /><label>{i}</label></div>)}
             </div>
             <div className={css.select}>
                 <div className={css.btnIO2}><input ref={otherRef} type='radio' name={name} value={sel} onChange={e => setReturn(e.target.value)} /><label>{sel}</label></div>
                 <select onChange={(e) => { setSel(e.target.value); otherRef.current.click(); setReturn(e.target.value) }} id={name} name={name}>
                     {curSupport.map(i => {
-                        if (i[0] !== sel) { return <option value={i[0]} >{i[1]} : {i[0]}</option> }
-                        else { return <option value={i[0]} selected>{i[1]} : {i[0]}</option> }
+                        if (i[0] !== sel) { return <option key={i} value={i[0]} >{i[1]} : {i[0]}</option> }
+                        else { return <option key={i} value={i[0]} selected>{i[1]} : {i[0]}</option> }
                     })}
                 </select>
             </div>

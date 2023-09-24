@@ -46,7 +46,7 @@ function Snack() {
       <List key={elem.id} id={elem.id} price={elem.price} weight={elem.weight} score={elem.normScore} remove={remove} />
     )))
     priceRef.current.focus()
-  }, [data])
+  }, [data,remove])
   return (
     <div className={css.main}>
       <header className={css.header}>
