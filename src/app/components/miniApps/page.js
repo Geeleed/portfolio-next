@@ -8,7 +8,7 @@ import RateExchange from './RateExchange'
 function Page() {
   return (
     <div>
-        <Glassmorphism/>
+        {/* <Glassmorphism/> */}
         <br/>
         {/* <Glassmorphism0/> */}
         {/* <Snack/> */}
