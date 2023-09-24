@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import css from './Portfolio.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import Snack from './miniApps/Snack'
+import RateExchange from './miniApps/RateExchange'
 
 function Portfolio() {
+    const [popup, setPopup] = useState(null)
     return (
         <div id='portfolio' className={css.main}>
             <section className={css.miniProject}>
@@ -26,14 +29,16 @@ function Portfolio() {
             </section>
             <section className={css.miniProject}>
                 <h1>Mini Apps</h1>
-                <CardApp title={'Glassmorphism'} />
+                <CardApp title={'Glassmorphism'} setPopup={setPopup} />
                 <CardApp title={'Neomorphism'} />
                 <CardApp title={'Photo Editor'} />
-                <CardApp title={'Rate Exchange'} />
-                <CardApp title={'Best Buy'} />
+                <CardApp title={'Rate Exchange'} imageSrc={'/images/miniApps/rateExchange.png'} setPopup={setPopup} componentData={<RateExchange />} />
+                <CardApp title={'Snack'} imageSrc={'/images/miniApps/snack.png'} setPopup={setPopup} componentData={<Snack />} />
                 <CardApp title={'Text Locker'} />
                 <CardApp title={'File Locker'} />
                 <CardApp title={'Weather Now'} />
+                {popup}
+                {/* <PopupPage /> */}
             </section>
             <h1>Simple UI</h1>
             <section className={css.basicUI}>
@@ -85,15 +90,67 @@ function CardWeb({ title, detail, img__src, url }) {
         </Link>
     )
 }
-function CardApp({ title }) {
+function CardApp({ title, imageSrc, setPopup, componentData }) {
     // const gen = (x) => parseInt(Math.random() * (x))
     // const offset = `path('M0,0 C${gen(-50)},0 ${gen(50)},${gen(50)} ${gen(50)},${gen(-50)} Z') ${parseInt((Math.random()*2-1)*5)}deg`
     return (
-        <Link style={{ scale: `${1 - Math.random() * 0.1}`, rotate: `${parseInt((Math.random() * 2 - 1) * 5)}deg` }} href={'#'} target='_blank' className={css.card__app__main}>
+        <div style={{ scale: `${1 - Math.random() * 0.1}`, rotate: `${parseInt((Math.random() * 2 - 1) * 5)}deg` }} className={css.card__app__main}
+            onClick={() => setPopup(<PopupPage setPopup={setPopup} componentData={componentData}/>)}>
             <h1>{title}</h1>
             <div>
-                <Image src={'/images/landing_page/lp4.jpg'} objectFit='cover' fill alt='' />
+                <Image src={imageSrc} objectFit='cover' fill alt='' />
             </div>
-        </Link>
+        </div>
+    )
+}
+// function PopupPage({ setPopup, component }) {
+//     return (
+//         <div className={css.popupApp} >
+//             <div onClick={() => setPopup(null)}
+//                 style={{
+//                     position: 'absolute',
+//                     top: '0rem', right: '0rem',
+//                     fontSize: '3rem',
+//                     display: 'flex',
+//                     justifyContent: 'center',
+//                     alignItems: 'center',
+//                     height: '3rem',
+//                     width: '3rem',
+//                     cursor: 'pointer'
+//                 }}>X</div>
+//             {component}
+//         </div>
+//     )
+// }
+function PopupPage({setPopup,componentData}) {
+    return (
+        <div className={css.popupPage} >
+            <div onClick={() => setPopup(null)}
+                style={{
+                    position: 'absolute',
+                    top: '0rem', right: '0rem',
+                    fontSize: '3rem',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '3rem',
+                    width: '3rem',
+                    cursor: 'pointer',
+                    zIndex: '1'
+                }}>X</div>
+            <div className={css.popupApp}>
+                {componentData}
+            </div>
+            <div className={css.popupDetail}>
+                <h1>Snack</h1>
+                <h2>วิธีใช้</h2>
+                <p>หากคุณต้องตัดสินใจว่าซื้อของชิ้นไหนคุ้มกว่ากัน ผมขอแนะนำแอปนี้ เพียงกรอกราคาและน้ำหนักสินค้าลงไป ตัวแอปจะแสดงค่าแถบคะแนนสีฟ้า อันไหนเยอะสุดก็เลือกซื้ออันนั้นแหละ!</p>
+                <h2>เกี่ยวกับ...</h2>
+                <p>แอปนี้เกิดจากการไปหาเลือกซื้อของแล้วเปรียบเทียบราคาว่าซื้ออันไหนจึงจะคุ้ม ถ้าปริมาณต่อบาทมันเยอะแสดงว่าค่อนข้างคุ้ม แน่นอนว่าใช้เป็นแค่เกณฑ์เบื้องต้น เสียเวลาส่วนใหญ่ไปกับการออกแบบหน้าตาแอป การเขียนโค้ดมีความยุ่งยากตรงการแสดงแถบคะแนน เพราะเราต้องอัปเดตทุกครั้งที่มีการเพิ่มรายการ แล้วต้องปรับสเกลของแถบให้เต็มสำหรับตัวที่คุ้มสุดและเพื่อความดูเข้าใจง่ายอีกด้วย</p>
+                <div className={css.popupComment}>
+
+                </div>
+            </div>
+        </div>
     )
 }
