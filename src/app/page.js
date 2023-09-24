@@ -17,6 +17,7 @@ import Contact from './components/Contact'
 import ContactBar from './components/ContactBar'
 import Glassmorphism from './components/miniApps/Glassmorphism'
 import LoadingPage from './components/LoadingPage'
+import MiniAppsPage from './components/miniApps/MiniAppsPage'
 
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ function Page() {
         <Portfolio />
         <Contact />
         <ContactBar />
+        <MiniAppsPage/>
       </>
     )
     setLoaded(data)

@@ -1,11 +1,10 @@
-'use client'
 import React from 'react'
 import Glassmorphism from './Glassmorphism'
 import '../../CSS.css'
 import Snack from './Snack'
 import RateExchange from './RateExchange'
 
-function Page() {
+function MiniAppsPage() {
   return (
     <div>
       Hello
@@ -16,7 +15,7 @@ function Page() {
   )
 }
 
-export default Page
+export default MiniAppsPage
 
 // import React from 'react'
 
