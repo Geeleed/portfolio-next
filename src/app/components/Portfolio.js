@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Snack from './miniApps/Snack'
 import RateExchange from './miniApps/RateExchange'
+import Glassmorphism from './miniApps/Glassmorphism'
 
 function Portfolio() {
     const [popup, setPopup] = useState(null)
@@ -29,7 +30,7 @@ function Portfolio() {
             </section>
             <section className={css.miniProject}>
                 <h1>Mini Apps</h1>
-                <CardApp title={'Glassmorphism'} setPopup={setPopup} />
+                <CardApp title={'Glassmorphism'} imageSrc={'/images/miniApps/glassmorphism.png'} setPopup={setPopup} componentData={<Glassmorphism />} />
                 <CardApp title={'Neomorphism'} />
                 <CardApp title={'Photo Editor'} />
                 <CardApp title={'Rate Exchange'} imageSrc={'/images/miniApps/rateExchange.png'} setPopup={setPopup} componentData={<RateExchange />} />
@@ -95,7 +96,7 @@ function CardApp({ title, imageSrc, setPopup, componentData }) {
     // const offset = `path('M0,0 C${gen(-50)},0 ${gen(50)},${gen(50)} ${gen(50)},${gen(-50)} Z') ${parseInt((Math.random()*2-1)*5)}deg`
     return (
         <div style={{ scale: `${1 - Math.random() * 0.1}`, rotate: `${parseInt((Math.random() * 2 - 1) * 5)}deg` }} className={css.card__app__main}
-            onClick={() => setPopup(<PopupPage setPopup={setPopup} componentData={componentData}/>)}>
+            onClick={() => setPopup(<PopupPage setPopup={setPopup} componentData={componentData} />)}>
             <h1>{title}</h1>
             <div>
                 <Image src={imageSrc} objectFit='cover' fill alt='' />
@@ -122,7 +123,7 @@ function CardApp({ title, imageSrc, setPopup, componentData }) {
 //         </div>
 //     )
 // }
-function PopupPage({setPopup,componentData}) {
+function PopupPage({ setPopup, componentData }) {
     return (
         <div className={css.popupPage} >
             <div onClick={() => setPopup(null)}

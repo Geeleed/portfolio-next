@@ -6,6 +6,15 @@ function Glassmorphism() {
   const [op, setOp] = useState(0.2)
   const [ol, setOl] = useState(0.3)
   const [blur, setBlur] = useState(5)
+  function rgba(rgbHex, a) {
+    let r = rgbHex[1] + rgbHex[2]
+    let g = rgbHex[3] + rgbHex[4]
+    let b = rgbHex[5] + rgbHex[6]
+    r = parseInt(r, 16)
+    g = parseInt(g, 16)
+    b = parseInt(b, 16)
+    return `rgba(${r},${g},${b},${a})`
+  }
   return (
     <div className={css.main}>
       <h1>Glassmorphism</h1>
@@ -37,13 +46,3 @@ function Glassmorphism() {
 }
 
 export default Glassmorphism
-
-function rgba(rgbHex, a) {
-  let r = rgbHex[1] + rgbHex[2]
-  let g = rgbHex[3] + rgbHex[4]
-  let b = rgbHex[5] + rgbHex[6]
-  r = parseInt(r, 16)
-  g = parseInt(g, 16)
-  b = parseInt(b, 16)
-  return `rgba(${r},${g},${b},${a})`
-}
