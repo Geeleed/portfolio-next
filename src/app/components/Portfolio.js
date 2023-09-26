@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Snack from './miniApps/Snack'
 import RateExchange from './miniApps/RateExchange'
 import Glassmorphism from './miniApps/Glassmorphism'
+import Neomorphism from './miniApps/Neomorphism'
 
 function Portfolio() {
     const [popup, setPopup] = useState(null)
@@ -31,7 +32,7 @@ function Portfolio() {
             <section className={css.miniProject}>
                 <h1>Mini Apps</h1>
                 <CardApp title={'Glassmorphism'} imageSrc={'/images/miniApps/glassmorphism.png'} setPopup={setPopup} componentData={<Glassmorphism />} />
-                <CardApp title={'Neomorphism'} />
+                <CardApp title={'Neomorphism'} imageSrc={'/images/miniApps/neomorphism.png'} setPopup={setPopup} componentData={<Neomorphism />} />
                 <CardApp title={'Photo Editor'} />
                 <CardApp title={'Rate Exchange'} imageSrc={'/images/miniApps/rateExchange.png'} setPopup={setPopup} componentData={<RateExchange />} />
                 <CardApp title={'Snack'} imageSrc={'/images/miniApps/snack.png'} setPopup={setPopup} componentData={<Snack />} />
