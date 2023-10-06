@@ -1,0 +1,9 @@
+.main{
+    width: 40rem;
+    height: 40rem;
+    background-color: var(--main-color);
+    position: relative;
+}
+.ctrl{
+    z-index: 10;
+}

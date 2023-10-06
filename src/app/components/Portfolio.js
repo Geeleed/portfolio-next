@@ -6,6 +6,7 @@ import Snack from './miniApps/Snack'
 import RateExchange from './miniApps/RateExchange'
 import Glassmorphism from './miniApps/Glassmorphism'
 import Neomorphism from './miniApps/Neomorphism'
+import MiniGameCard from './miniApps/MiniGameCard'
 
 function Portfolio() {
     const [popup, setPopup] = useState(null)
@@ -31,14 +32,14 @@ function Portfolio() {
             </section>
             <section className={css.miniProject}>
                 <h1>Mini Apps</h1>
-                <CardApp title={'Glassmorphism'} imageSrc={'/images/miniApps/glassmorphism.png'} setPopup={setPopup} componentData={<Glassmorphism />} />
-                <CardApp title={'Neomorphism'} imageSrc={'/images/miniApps/neomorphism.png'} setPopup={setPopup} componentData={<Neomorphism />} />
-                <CardApp title={'Photo Editor'} />
-                <CardApp title={'Rate Exchange'} imageSrc={'/images/miniApps/rateExchange.png'} setPopup={setPopup} componentData={<RateExchange />} />
-                <CardApp title={'Snack'} imageSrc={'/images/miniApps/snack.png'} setPopup={setPopup} componentData={<Snack />} />
-                <CardApp title={'Text Locker'} />
-                <CardApp title={'File Locker'} />
-                <CardApp title={'Weather Now'} />
+                <CardApp title={''} imageSrc={'/images/miniApps/neomorphism.png'} setPopup={setPopup} componentData={<Neomorphism />} />
+                <CardApp title={''} imageSrc={'/images/miniApps/rateExchange.png'} setPopup={setPopup} componentData={<RateExchange />} />
+                <CardApp title={''} imageSrc={'/images/miniApps/snack.png'} setPopup={setPopup} componentData={<Snack />} />
+                <CardApp title={''} imageSrc={'/images/miniApps/miniGameByReactJs.png'} setPopup={setPopup} componentData={<MiniGameCard />} />
+                {/* <CardApp title={''} imageSrc={'/images/miniApps/glassmorphism.png'} setPopup={setPopup} componentData={<Glassmorphism />} /> */}
+                {/* <CardApp title={'Text Locker'} /> */}
+                {/* <CardApp title={'File Locker'} /> */}
+                {/* <CardApp title={'Weather Now'} /> */}
                 {popup}
                 {/* <PopupPage /> */}
             </section>
@@ -96,7 +97,10 @@ function CardApp({ title, imageSrc, setPopup, componentData }) {
     // const gen = (x) => parseInt(Math.random() * (x))
     // const offset = `path('M0,0 C${gen(-50)},0 ${gen(50)},${gen(50)} ${gen(50)},${gen(-50)} Z') ${parseInt((Math.random()*2-1)*5)}deg`
     return (
-        <div style={{ scale: `${1 - Math.random() * 0.1}`, rotate: `${parseInt((Math.random() * 2 - 1) * 5)}deg` }} className={css.card__app__main}
+        <div
+            // style={{ scale: `${1 - Math.random() * 0.1}`, rotate: `${parseInt((Math.random() * 2 - 1) * 5)}deg` }}
+            // style={{ scale: `1`, rotate: `0deg`, margin: '1rem' }}
+            className={css.card__app__main}
             onClick={() => setPopup(<PopupPage setPopup={setPopup} componentData={componentData} />)}>
             <h1>{title}</h1>
             <div>

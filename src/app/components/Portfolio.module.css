@@ -8,6 +8,7 @@
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    gap: 1rem;
 }
 
 .miniProject>h1 {
@@ -129,12 +130,16 @@
     /* animation: unset; */
     /* filter: unset; */
     overflow: hidden;
+    cursor: pointer;
+    scale: 1;
+    /* margin: 0.5rem; */
 }
 
 .card__app__main:hover {
     transform: translate(-5px, -5px);
     /* filter: drop-shadow(10px 10px var(--sub-color)); */
     box-shadow: 10px 10px var(--sub-color);
+    z-index: 3;
 }
 
 .card__app__main>h1 {
@@ -145,7 +150,7 @@
     width: inherit;
     /* height: inherit; */
     aspect-ratio: inherit;
-    background-color: var(--main-color-d);
+    /* background-color: var(--main-color-d); */
     /* backdrop-filter: blur(5px); */
     display: flex;
     justify-content: center;
