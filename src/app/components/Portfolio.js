@@ -86,7 +86,7 @@ function CardUI({ title, src, url }) {
         <main className={css.main3}>
             <h1>{title}</h1>
             <iframe src={src} />
-            <GitHub href={url}/>
+            <GitHub href={url} />
         </main>
     )
 }
@@ -118,6 +118,7 @@ function CardApp({ title, imageSrc, setPopup, componentData }) {
     )
 }
 function PopupPage({ setPopup, componentData }) {
+    const [toggle, setToggle] = useState(true)
     return (
         <div className={css.popupPage} >
             <div onClick={() => setPopup(null)}
@@ -136,19 +137,20 @@ function PopupPage({ setPopup, componentData }) {
             <div className={css.popupApp}>
                 {componentData.component}
             </div>
-            <div className={css.popupDetail}>
+            <div className={toggle ? css.popupDetail : css.popupDetail2}>
                 <h1>{componentData.title}</h1>
                 <h2>วิธีใช้</h2>
                 <p>{componentData.how}</p>
                 <h2>เกี่ยวกับ...</h2>
                 <p>{componentData.about}</p>
-                <label>Source </label><GitHub href={componentData.href}/>
+                <label>Source </label><GitHub href={componentData.href} />
             </div>
+            <button className={toggle ? css.helpBtn : css.helpBtn2} onClick={() => setToggle(i => !i)}>?</button>
         </div>
     )
 }
 
-function GitHub({href}) {
+function GitHub({ href }) {
     return (
         <Link href={href} className={css.github} target='_blank'>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">

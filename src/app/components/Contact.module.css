@@ -183,3 +183,24 @@
     border-bottom: 1px solid var(--sub-color);
     padding: 0.5rem;
 }
+
+@media (max-width:650px) {
+    .main {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width:350px) {
+
+    .form,
+    .webboard {
+        width: 80vw;
+        height: 60vh;
+        min-height: unset;
+    }
+
+    .form>h1,
+    .webboard>h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,3 +1,7 @@
+.main {
+    overflow: hidden;
+}
+
 .miniProject {
     background-color: #000;
     padding-top: 9rem;
@@ -38,7 +42,7 @@
 
 .basicUI::-webkit-scrollbar,
 .basicUI::-webkit-scrollbar-track {
-    height: 0;
+    height: 0.7rem;
 }
 
 .pad {
@@ -259,6 +263,8 @@
     overflow: hidden;
     overscroll-behavior-y: contain;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .popupApp {
@@ -272,14 +278,16 @@
 
 .popupDetail {
     width: 30%;
+    height: 100%;
     background-color: var(--main-color);
     padding: 3rem 2rem 1rem 2rem;
     opacity: 0;
     animation: popupDetail 0.3s ease 0s forwards;
+    overflow-y: scroll;
 }
 
 .popupDetail>h1 {
-    font-size: 3rem;
+    font-size: xx-large;
     text-align: center;
     opacity: 0;
     animation: popupDetail 0.3s ease 0.1s forwards;
@@ -301,4 +309,192 @@
     height: 5rem;
     opacity: 0;
     animation: popupDetail 0.3s ease 0.4s forwards;
+}
+
+.helpBtn,
+.helpBtn2 {
+    z-index: 2;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.popupDetail2 {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color-a);
+    padding: 7%;
+    backdrop-filter: blur(20px);
+    overflow-y: scroll;
+    animation: popupDetail2 0.3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes popupDetail2 {
+    from {
+        scale: 1.5;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.popupDetail2>h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.popupDetail2>h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.popupDetail2>p {
+    font-size: 1.3rem;
+}
+
+@media (max-width:1024px) {
+    .popupDetail>h1 {
+        font-size: xx-large;
+    }
+
+}
+
+@media (max-width:900px) {
+    .popupDetail {
+        display: none;
+    }
+
+    .helpBtn {
+        display: flex;
+    }
+
+    .popupPage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .popupApp {
+        min-width: 40rem;
+        min-height: 40rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width:900px) {
+    .helpBtn {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .popupApp {
+        scale: 0.9;
+    }
+}
+
+@media (max-width:650px) {
+    .popupApp {
+        scale: 0.85;
+    }
+
+    .popupDetail2>h1 {
+        font-size: 2.7rem;
+    }
+
+    .popupDetail2>h2 {
+        font-size: 2.1rem;
+    }
+
+    .popupDetail2>p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:600px) {
+    .popupApp {
+        scale: 0.8;
+    }
+
+    .popupDetail2>h1 {
+        font-size: 2.5rem;
+    }
+
+    .popupDetail2>h2 {
+        font-size: 2rem;
+    }
+
+    .popupDetail2>p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:550px) {
+    .popupApp {
+        scale: 0.75;
+    }
+}
+
+@media (max-width:500px) {
+    .popupApp {
+        scale: 0.7;
+    }
+
+    .main>section>h1,
+    .main>h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:450px) {
+    .popupApp {
+        scale: 0.65;
+    }
+
+    .popupDetail2>h1 {
+        font-size: 2rem;
+    }
+
+    .popupDetail2>h2 {
+        font-size: 1.5rem;
+    }
+
+    .popupDetail2>p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:400px) {
+    .popupApp {
+        scale: 0.55;
+    }
+}
+
+@media (max-width:350px) {
+    .popupApp {
+        scale: 0.45;
+    }
+}
+
+@media (max-width:300px) {
+    .popupApp {
+        scale: 0.35;
+    }
 }

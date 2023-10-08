@@ -67,6 +67,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--tiny-color);
+  border-radius: 1rem;
 }
 
 /* ::-webkit-scrollbar-corner {

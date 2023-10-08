@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 2rem 10%;
     gap: 3rem;
 }
@@ -63,4 +64,30 @@
 
 .text>div>img:hover {
     scale: 1.4;
+}
+
+@media (max-width:450px) {
+    .text>h1{
+        font-size: 2rem;
+    }
+    .text>p{
+        font-size: 1rem;
+    }
+    .main{
+        gap: 0;
+    }
+    .text>div>img{
+        height: 30px;
+    }
+}
+@media (max-width:350px) {
+    .text>h1{
+        font-size: 1rem;
+    }
+    .text>p{
+        font-size: 0.8rem;
+    }
+    .text>div>img{
+        height: 20px;
+    }
 }

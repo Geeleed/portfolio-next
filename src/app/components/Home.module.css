@@ -28,12 +28,16 @@
 
 .content>p {
     font-size: 1.5rem;
+    text-align: center;
+    margin: 0 3rem;
 }
 
 .content>div {
     display: flex;
     gap: 1rem;
     margin: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content>div>a {
@@ -133,5 +137,34 @@
         width: 30rem;
         opacity: 0;
         offset-distance: 100%;
+    }
+}
+
+@media (max-width:650px) {
+    .content>h1{
+        font-size: 4rem;
+    }
+}
+@media (max-width:400px) {
+    .content>h1{
+        font-size: 3rem;
+    }
+    .content>p{
+        font-size: 1.1rem;
+    }
+    .content>div>a{
+        font-size: 2rem;
+    }
+}
+@media (max-width:350px) {
+    .content>h1{
+        font-size: 2rem;
+    }
+    .content>p{
+        font-size: 0.9rem;
+    }
+    .content>div>a{
+        font-size: 1.5rem;
+        width: 10rem;
     }
 }

@@ -25,7 +25,7 @@ function Contact() {
         <input ref={titleRef} type="text" placeholder='หัวข้อ' />
         <textarea ref={textRef} placeholder='ข้อความ' />
         <input type='submit' value='ส่งข้อความ' onClick={(e) => lineMsg(e)} />
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', }}>
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap:'wrap'}}>
           <Link href={'mailto:surasak.kwork@gmail.com'}>surasak.kwork@gmail.com</Link>
           <Link href={'https://www.facebook.com/surasak.kaewpho/'} target='_blank'>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -97,7 +97,7 @@ function WebBoard() {
         <div className={css.webboardInput}>
           <textarea ref={textareaRef} placeholder='กรอกข้อความ' />
           <div>
-            <p onClick={() => { imgRef.current.click() }} style={{ cursor: 'pointer' }}>{base64 ? 'เปลี่ยน' : 'เพิ่มภาพ'}</p>
+            <p onClick={() => { imgRef.current.click() }} style={{ cursor: 'pointer',textAlign:'center' }}>{base64 ? 'เปลี่ยน' : 'เพิ่มภาพ'}</p>
             <input ref={imgRef} style={{ display: 'none' }} onClick={() => { base64 && setBase64() }} onChange={e => {
               const reader = new FileReader()
               const file = e.target.files[0]

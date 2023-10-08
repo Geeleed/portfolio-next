@@ -1,6 +1,7 @@
 .main {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .main>a {
@@ -15,8 +16,8 @@
 .main>a>h1 {
     position: absolute;
     font-size: 6rem;
-    padding-left: 2rem;
     display: flex;
+    padding: 0 2rem;
     justify-content: center;
     align-items: center;
     color: white;
@@ -37,4 +38,38 @@
 .main>a:hover>h1 {
     color: var(--tiny-color);
     transform: translateX(7rem) scaleX(1.2);
+}
+
+@media (max-width:500px) {
+    .main>a>h1 {
+        font-size: 4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main>a:hover>h1 {
+        transform: translate(-50%, -50%);
+    }
+
+    .main>a {
+        height: 6.5rem;
+    }
+}
+
+@media (max-width:350px) {
+    .main>a>h1 {
+        font-size: 2rem;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+
+    .main>a:hover>h1 {
+        transform: translate(1rem, -50%);
+    }
+
+    .main>a {
+        height: 3rem;
+    }
 }
