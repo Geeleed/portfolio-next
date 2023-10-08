@@ -1,6 +1,7 @@
 // 'use client'
 import React, { useState } from 'react'
-import css from './Glassmorphism.module.css'
+// import css from './Glassmorphism.module.css'
+import css from './test.module.css'
 function Glassmorphism() {
   const [color, setColor] = useState('#000000')
   const [op, setOp] = useState(0.2)
@@ -19,6 +20,14 @@ function Glassmorphism() {
     <div className={css.main}>
       <h1>Glassmorphism</h1>
       <div className={css.glass}>
+        {[1, 2, 3, 4, 5, 6].map(i => <div key={`${i}`} style={{
+          border: `1px solid ${rgba(color, ol)}`,
+          background: `linear-gradient(130deg,${rgba(color, op)},${rgba('#ffffff', op)},${rgba(color, op)})`,
+          backdropFilter: `blur(${blur}px)`,
+          WebkitBackdropFilter: `blur(${blur}px)`,
+          boxShadow: `5px 5px 20px #00000055`
+        }}>
+        </div>)}
       </div>
       <p className={css.p}>
         {`border: 1px solid ${rgba(color, ol)};
