@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Snack from './miniApps/Snack'
 import RateExchange from './miniApps/RateExchange'
-// import Glassmorphism from './miniApps/Glassmorphism'
+import Glassmorphism from './miniApps/Glassmorphism'
 import Neomorphism from './miniApps/Neomorphism'
 import MiniGameCard from './miniApps/MiniGameCard'
 

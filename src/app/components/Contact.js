@@ -61,7 +61,7 @@ function WebBoard() {
   const [sw, setSw] = useState(true)
   const [base64, setBase64] = useState()
   const imgRef = useRef()
-  const [comment, setComment] = useState([{ text: 'hello1' }, { text: 'hello2' }, { text: 'hello3' }])
+  const [comment, setComment] = useState([])
   const textareaRef = useRef()
   function post(base64Image, sometext) {
     const timestamp = new Date()
