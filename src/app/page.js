@@ -34,7 +34,7 @@ function Page() {
         <Home />
         <Profile />
         <Portfolio />
-        <Contact />
+        {/* <Contact /> */}
         <ContactBar />
         {/* <MiniAppsPage/> */}
       </div>

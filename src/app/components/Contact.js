@@ -101,8 +101,8 @@ function WebBoard() {
             <input ref={imgRef} style={{ display: 'none' }} onClick={() => { base64 && setBase64() }} onChange={e => {
               const reader = new FileReader()
               const file = e.target.files[0]
-              const filetype = file.type
-              console.log(filetype)
+              // const filetype = file.type
+              // console.log(filetype)
               // แปลงไฟล์เป็น base64 ซึ่งเป็น string
               reader.readAsDataURL(file)
               // โหลด base64 ออกมาจาก reader
