@@ -89,7 +89,7 @@ function WebBoard() {
   return (
     <section id='webboard' className={css.webboard}>
       <h1>Web board</h1>
-      <article>{comment.map((i, index) => <Poster id={index} data={i} />)}</article>
+      <article>{comment.map((i, index) => <Poster id={index} key={index} data={i} />)}</article>
       <form>
         <div>
           {base64 && <img src={base64} />}
