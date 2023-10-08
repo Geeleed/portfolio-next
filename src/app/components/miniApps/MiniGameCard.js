@@ -123,7 +123,7 @@ function Player({ setOn, setGameState, setEnd }) {
             </header>
             <section className={css.section}>
                 {hexCode
-                    .map((color, index) => <Box color={color} index={index} process={process} />)}
+                    .map((color, index) => <Box color={color} key={index} index={index} process={process} />)}
             </section>
         </div>
     )
