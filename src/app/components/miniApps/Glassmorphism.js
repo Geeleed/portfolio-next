@@ -28,13 +28,7 @@ function Glassmorphism() {
         }}>
         </div>)}
       </div>
-      <p className={css.p}>
-        {`border: 1px solid ${rgba(color, ol)};
-          background: linear-gradient(130deg,${rgba(color, op)},${rgba('#ffffff', op)},${rgba(color, op)});
-          backdrop-filter: blur(${blur}px);
-          -webkit-backdrop-filter: blur(${blur}px);
-          box-shadow: 5px 5px 20px #00000075;`}
-      </p>
+      
       <div className={css.ctrl}>
         <div><label>{color}</label><input type='color' onChange={e => setColor(e.target.value)} value={color} /></div>
         <div><label>Opacity</label><input className={css.inputRange} type='range' onChange={e => setOp(e.target.value)} min={0} max={1} step={0.01} value={op} /></div>
