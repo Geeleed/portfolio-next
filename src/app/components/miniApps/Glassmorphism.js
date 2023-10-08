@@ -19,7 +19,7 @@ function Glassmorphism() {
     <div className={css.main}>
       <h1>Glassmorphism</h1>
       <div className={css.glass}>
-        {[1, 2, 3, 4, 5, 6].map(i => <div key={i} style={{
+        {[1, 2, 3, 4, 5, 6].map(i => <div key={`${i}`} style={{
           border: `1px solid ${rgba(color, ol)}`,
           background: `linear-gradient(130deg,${rgba(color, op)},${rgba('#ffffff', op)},${rgba(color, op)})`,
           backdropFilter: `blur(${blur}px)`,
