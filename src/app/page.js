@@ -29,14 +29,12 @@ function Page() {
   useEffect(() => {
     const data = (
       <div>
-        {/* <Glassmorphism /> */}
-        <Navbar />
+        {/* <Navbar />
         <Home />
         <Profile />
         <Portfolio />
         <Contact />
-        <ContactBar />
-        {/* <MiniAppsPage/> */}
+        <ContactBar /> */}
       </div>
     )
     setLoaded(data)
