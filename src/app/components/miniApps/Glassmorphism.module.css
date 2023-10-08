@@ -1,4 +1,12 @@
-.main {
+.main,
+.glass,
+.p,
+.ctrl,
+.inputRange {
+    outline: auto;
+}
+
+/* .main {
     width: 40rem;
     height: 40rem;
     background: var(--main-color) linear-gradient(-30deg, var(--tiny-color), yellow, var(--tiny-color));
@@ -31,7 +39,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-}
+} */
 
 .glass div {
     transition: all 0.5s;
