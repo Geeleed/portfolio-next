@@ -31,7 +31,7 @@
             height: 150%;
             background: #333;
             transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
-            animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+            animation: spin 1s calc(var(--delay) * 1s) infinite ease;
         }
 
         .spinner div:nth-child(1) {
@@ -94,8 +94,11 @@
             --translation: 150;
         }
 
-        @keyframes spinner-fzua35 {
+        @keyframes spin {
 
+            0%{
+                background-color: red;
+            }
             0%,
             10%,
             20%,
@@ -106,11 +109,10 @@
             80%,
             90%,
             100% {
-                transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+                transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 2%));
             }
-
-            50% {
-                transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+            50%{
+                background-color: red;
             }
         }
     </style>

@@ -25,6 +25,7 @@
 .content>h1 {
     font-size: 7rem;
 }
+
 .content>p {
     font-size: 1.5rem;
 }
@@ -35,25 +36,28 @@
     margin: 2rem;
 }
 
-.content>div>button {
+.content>div>a {
     cursor: pointer;
     width: 15rem;
     background-color: transparent;
     border: 2px solid var(--sub-color);
     font-size: 3rem;
+    text-decoration: none;
+    display: grid;
+    place-items:center;
 }
 
-.content>div>button:nth-child(1) {
+.content>div>a:nth-child(1) {
     border: 2px solid var(--tiny-color);
     background-color: var(--tiny-color);
 }
 
-.content>div>button:hover:nth-child(1) {
+.content>div>a:hover:nth-child(1) {
     background-color: var(--tiny-color-8);
     border: 2px solid var(--tiny-color);
 }
 
-.content>div>button:hover:nth-child(2) {
+.content>div>a:hover:nth-child(2) {
     border: 2px solid var(--tiny-color);
 }
 
@@ -96,7 +100,8 @@
     overflow: hidden;
 }
 
-.sq,.sq2 {
+.sq,
+.sq2 {
     width: 2rem;
     aspect-ratio: 1;
     background-color: white;

@@ -5,15 +5,15 @@ import Link from 'next/link'
 
 function Home() {
     return (
-        <main className={css.main}>
+        <main id='home' className={css.main}>
             <Anim numList={[20, 5]} elementList={[<Sq key={''} />, <Sq2 key={''} />]} />
             <div style={{ width: 'inherit', height: 'inherit', backgroundColor: '#000000aa' }}></div>
             <div className={css.content}>
                 <h1>PORTFOLIO</h1>
                 <p>สวัสดีครับ ยินดีที่ได้รู้จัก เว็บนี้ทำไว้เป็นแฟ้มสะสมผลงานด้าน IT</p>
                 <div>
-                    <button>Resume</button>
-                    <button>Profile</button>
+                    <Link href={'resume-front-end-2.pdf'} target='_blank'>Resume</Link>
+                    <Link href={'#profile'}>Profile</Link>
                 </div>
             </div>
             <Link href={'#profile'} className={css.scroll__down}>

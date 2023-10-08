@@ -28,7 +28,7 @@ function Page() {
 
   useEffect(() => {
     const data = (
-      <>
+      <div>
         {/* <Glassmorphism /> */}
         <Navbar />
         <Home />
@@ -37,7 +37,7 @@ function Page() {
         <Contact />
         <ContactBar />
         {/* <MiniAppsPage/> */}
-      </>
+      </div>
     )
     setLoaded(data)
     setIsLoading(false);

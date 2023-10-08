@@ -78,7 +78,7 @@
     aspect-ratio: 1.62;
     background-color: var(--main-color);
     color: var(--tiny-color);
-    border: 3px dashed var(--sub-color);
+    border: 0.5rem solid var(--tiny-color);
     cursor: pointer;
     position: relative;
 }

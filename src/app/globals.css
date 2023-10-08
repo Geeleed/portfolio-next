@@ -59,3 +59,16 @@
   background: var(--tiny-color);
   color: var(--main-color);
 }
+
+::-webkit-scrollbar {
+  background-color: var(--main-color);
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--tiny-color);
+}
+
+/* ::-webkit-scrollbar-corner {
+  background-color: var(--main-color-5);
+} */
