@@ -29,12 +29,12 @@ function Page() {
   useEffect(() => {
     const data = (
       <div>
-        {/* <Navbar />
+        <Navbar />
         <Home />
         <Profile />
         <Portfolio />
         <Contact />
-        <ContactBar /> */}
+        <ContactBar />
       </div>
     )
     setLoaded(data)

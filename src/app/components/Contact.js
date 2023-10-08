@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import css from './Contact.module.css'
 import Link from 'next/link'
-import { Anim } from './Home'
+// import { Anim } from './Home'
 
 function Contact() {
   const titleRef = useRef()
