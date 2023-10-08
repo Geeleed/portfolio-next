@@ -21,6 +21,13 @@ function Portfolio() {
             </section>
             <section className={css.miniProject}>
                 <h1>Mini Apps</h1>
+                <CardApp imageSrc={'/images/miniApps/glassmorphism.png'} setPopup={setPopup}
+                    componentData={{
+                        component: <Glassmorphism />,
+                        title: 'Glassmorphism',
+                        how: 'effect กระจก ลองปรับเลื่อนดู เสร็จแล้วจะได้โค้ด CSS คัดลอกไปใช้ได้เลย',
+                        about: 'เป็นแอปทำ effect แบบกระจก ซึ่งเป็น UI ที่นิยมใช้กันเยอะ การปรับหลัก ๆ จะเป็นความ blur กับสีกระจกที่เป็น gradient'
+                    }} />
                 <CardApp imageSrc={'/images/miniApps/neomorphism.png'} setPopup={setPopup}
                     componentData={{
                         component: <Neomorphism />,

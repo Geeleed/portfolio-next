@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React, { useState } from 'react'
 import css from './Glassmorphism.module.css'
 function Glassmorphism() {

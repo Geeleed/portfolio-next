@@ -87,8 +87,8 @@ function WebBoard() {
       .then(data => setComment(data))
   }, [sw])
   return (
-    <section id='webboard' className={css.webboard}>
-      <h1>Web board</h1>
+    <section className={css.webboard}>
+      <h1 id='webboard'>Web board</h1>
       <article>{comment.map((i, index) => <Poster id={index} key={index} data={i} />)}</article>
       <form>
         <div>
