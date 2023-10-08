@@ -1,24 +1,34 @@
-'use client'
-import React from 'react'
-import '../../CSS.css'
-import Snack from './Snack'
-import RateExchange from './RateExchange'
-import Glassmorphism from './Glassmorphism'
-import Neomorphism from './Neomorphism'
-import Photograd from './Photograd'
-import MiniGameCard from './MiniGameCard'
+// 'use client'
+// import React from 'react'
+// import '../../CSS.css'
+// import Snack from './Snack'
+// import RateExchange from './RateExchange'
+// import Glassmorphism from './Glassmorphism'
+// import Neomorphism from './Neomorphism'
+// import Photograd from './Photograd'
+// import MiniGameCard from './MiniGameCard'
 
-function MiniAppsPage() {
+// function MiniAppsPage() {
+//   return (
+//     <div >
+//       <MiniGameCard/><br/>
+//       {/* <Photograd/><br/>
+//       <Neomorphism /><br />
+//       <Glassmorphism /><br />
+//       <Snack /><br />
+//       <RateExchange /><br /> */}
+//     </div>
+//   )
+// }
+
+// export default MiniAppsPage
+
+import React from 'react'
+
+function Page() {
   return (
-    <div >
-      <MiniGameCard/><br/>
-      {/* <Photograd/><br/>
-      <Neomorphism /><br />
-      <Glassmorphism /><br />
-      <Snack /><br />
-      <RateExchange /><br /> */}
-    </div>
+    <div>Page</div>
   )
 }
 
-export default MiniAppsPage
+export default Page
