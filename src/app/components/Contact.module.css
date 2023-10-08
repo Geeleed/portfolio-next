@@ -5,20 +5,15 @@
     position: relative;
     /* background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'); */
     /* background-image: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80'); */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-}
-
-.main * {
-
-    /* outline: auto; */
 }
 
 .main>div {
@@ -36,12 +31,9 @@
     min-height: 30rem;
     gap: 0.5rem;
     height: 35rem;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
 }
-.form>h1{
+
+.form>h1 {
     font-size: 5rem;
 }
 
@@ -60,7 +52,6 @@
     font-size: 1.1rem;
     outline: none;
     border: none;
-    /* height: 15rem; */
     flex-grow: 1;
     padding: 0.5rem;
     color: var(--sub-color);
@@ -84,17 +75,13 @@
 .webboard {
     z-index: 1;
     width: 40rem;
-    /* height: 90%; */
     height: 35rem;
-    /* position: absolute;
-    top: 0; */
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    /* border: 0.2rem solid var(--tiny-color); */
-    /* padding: 0.2rem; */
 }
-.webboard>h1{
+
+.webboard>h1 {
     font-size: 3rem;
 }
 
@@ -104,10 +91,12 @@
     display: flex;
     flex-direction: column;
 }
-.webboard>form>div:nth-child(1){
+
+.webboard>form>div:nth-child(1) {
     display: flex;
     justify-content: center;
 }
+
 .webboard>form>div>img {
     height: 10rem;
 }
@@ -154,7 +143,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--tiny-color); */
     border: 5px solid var(--main-color);
     background-color: var(--main-color);
     cursor: pointer;

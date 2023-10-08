@@ -5,7 +5,6 @@
 }
 
 .main {
-    /* background-color: var(--tiny-color); */
     position: relative;
     width: 40rem;
     height: 40rem;
@@ -18,7 +17,6 @@
 
 .display {
     height: 60%;
-    /* background-color: var(--main-color-5); */
     position: relative;
     display: flex;
     justify-content: center;
@@ -41,28 +39,24 @@
 }
 
 .sun>div:nth-child(1) {
-    /* position: absolute; */
     top: 0;
     left: 0;
     border-radius: 0 0 100% 0;
 }
 
 .sun>div:nth-child(2) {
-    /* position: absolute; */
     top: 0;
     right: 0;
     border-radius: 0 0 0 100%;
 }
 
 .sun>div:nth-child(3) {
-    /* position: absolute; */
     bottom: 0;
     left: 0;
     border-radius: 0 100% 0 0;
 }
 
 .sun>div:nth-child(4) {
-    /* position: absolute; */
     bottom: 0;
     right: 0;
     border-radius: 100% 0 0 0;
@@ -90,20 +84,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    /* background: rgb(130, 0, 0);
-    width: 350px;
-    height: 350px;
-    border-radius: 70px;
-    box-shadow:
-    -15px -15px 30px rgb(91, 0, 0),
-    15px 15px 30px rgb(192, 0, 0); */
-    
-}
-
-.ctrl {
-    /* outline: auto; */
-    /* background-color: var(--main-color-5); */
 }
 
 .input1 {
@@ -132,17 +112,17 @@
     z-index: 1;
     appearance: none;
 }
-.input1>div>input[type='color']{
+
+.input1>div>input[type='color'] {
     border: none;
     background-color: transparent;
 }
 
 .input1>div>input:checked~p {
-    /* background-color: yellow; */
     background-color: var(--main-color-e);
-    /* filter: invert(1); */
 }
-.ctrl>p{
+
+.ctrl>p {
     background-color: var(--main-color-5);
     height: 3rem;
     padding: 0 1rem;
@@ -152,52 +132,36 @@
     align-items: center;
     position: relative;
 }
-.labelInput2{
-    /* position: absolute; */
-    /* bottom: 0; */
+
+.labelInput2 {
     display: flex;
-    /* justify-content: space-around; */
 }
-.labelInput2>p{
+
+.labelInput2>p {
     text-align: center;
     width: 100%;
     font-size: 1.2rem;
-    /* outline: auto; */
     background-color: var(--main-color-5);
 }
-.input2{
-    display:flex ;
+
+.input2 {
+    display: flex;
     justify-content: space-around;
     height: 6rem;
 }
-.input2>input{
+
+.input2>input {
     appearance: none;
     transform-origin: 0;
-    transform: translate(50%,250%) rotate(-90deg);
-    /* background-color: red; */
+    transform: translate(50%, 250%) rotate(-90deg);
     background-color: transparent;
     width: 6rem;
     height: 2rem;
 }
-.input2>input::-webkit-slider-thumb{
+
+.input2>input::-webkit-slider-thumb {
     appearance: none;
     width: 2rem;
     height: 8rem;
     background-color: var(--sub-color-d);
-    /* background-color: yellow; */
-    /* border: 3px solid var(--sub-color); */
 }
-/* .input2>input::-webkit-slider-thumb::after{
-    content: '';
-    width: 3rem;
-    height: 3rem;
-    z-index: 1;
-    background-color: green;
-    position: absolute;
-} */
-/* .input2>input::-webkit-slider-runnable-track{
-    appearance: none;
-    background-color: red;
-    width: 3rem;
-    height: 3rem;
-} */

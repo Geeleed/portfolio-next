@@ -13,6 +13,7 @@ function randColor() {
     }
     return hexCode
 }
+// น่าจะตั้งชื่อว่า suffle มากกว่านะ
 function permutation(list) {
     const len = list.length
     let ndex = []
@@ -26,7 +27,4 @@ function permutation(list) {
     for (const i of ndex) { p.push(list[i]) }
     return p
 }
-function sleep(ms){
-    return new Promise((resolve)=> setTimeout(resolve,ms));
-}
-export { range, randColor, permutation, sleep }
+export { range, randColor, permutation }

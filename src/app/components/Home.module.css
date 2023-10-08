@@ -44,7 +44,7 @@
     font-size: 3rem;
     text-decoration: none;
     display: grid;
-    place-items:center;
+    place-items: center;
 }
 
 .content>div>a:nth-child(1) {

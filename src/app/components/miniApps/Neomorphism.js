@@ -1,4 +1,3 @@
-import { Sq40 } from '@/app/reuses/StyledComponents'
 import React, { useEffect, useRef, useState } from 'react'
 import css from './Neomorphism.module.css'
 function Neomorphism() {
@@ -136,42 +135,42 @@ function rgb2hsl(hexRGB) {
 
     return { hue: H.toFixed(2), sat: S.toFixed(2), lig: L.toFixed(2) }
 }
-function hsl2rgb(H, S, L) {
-    let d = S * (1 - Math.abs(2 * L - 1))
-    let m = 255 * (L - 0.5 * d)
-    let x = d * (1 - Math.abs((H / 60) % 2 - 1))
-    let R, G, B
-    if (0 <= H < 60) {
-        R = 255 * d + m
-        G = 255 * x + m
-        B = m
-    } else if (60 <= H < 120) {
-        R = 255 * x + m
-        G = 255 * d + m
-        B = m
-    } else if (120 <= H < 180) {
-        R = m
-        G = 255 * d + m
-        B = 255 * x + m
-    } else if (180 <= H < 240) {
-        R = m
-        G = 255 * x + m
-        B = 255 * d + m
-    } else if (240 <= H < 300) {
-        R = 255 * x + m
-        G = m
-        B = 255 * d + m
-    } else if (300 <= H < 360) {
-        R = 255 * d + m
-        G = m
-        B = 255 * x + m
-    } else if (H == 360) {
-        R = 255 * d + m
-        G = 255 * x + m
-        B = m
-    }
-    R = parseInt(R)
-    G = parseInt(G)
-    B = parseInt(B)
-    return '#' + R.toString(16) + G.toString(16) + B.toString(16)
-}
+// function hsl2rgb(H, S, L) {
+//     let d = S * (1 - Math.abs(2 * L - 1))
+//     let m = 255 * (L - 0.5 * d)
+//     let x = d * (1 - Math.abs((H / 60) % 2 - 1))
+//     let R, G, B
+//     if (0 <= H < 60) {
+//         R = 255 * d + m
+//         G = 255 * x + m
+//         B = m
+//     } else if (60 <= H < 120) {
+//         R = 255 * x + m
+//         G = 255 * d + m
+//         B = m
+//     } else if (120 <= H < 180) {
+//         R = m
+//         G = 255 * d + m
+//         B = 255 * x + m
+//     } else if (180 <= H < 240) {
+//         R = m
+//         G = 255 * x + m
+//         B = 255 * d + m
+//     } else if (240 <= H < 300) {
+//         R = 255 * x + m
+//         G = m
+//         B = 255 * d + m
+//     } else if (300 <= H < 360) {
+//         R = 255 * d + m
+//         G = m
+//         B = 255 * x + m
+//     } else if (H == 360) {
+//         R = 255 * d + m
+//         G = 255 * x + m
+//         B = m
+//     }
+//     R = parseInt(R)
+//     G = parseInt(G)
+//     B = parseInt(B)
+//     return '#' + R.toString(16) + G.toString(16) + B.toString(16)
+// }

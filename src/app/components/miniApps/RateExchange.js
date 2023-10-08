@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React, { useEffect, useRef, useState } from 'react'
 import css from './RateExchange.module.css'
 import LoadingPage from '../LoadingPage'
