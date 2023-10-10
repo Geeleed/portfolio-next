@@ -75,6 +75,59 @@ function Portfolio() {
                 <CardUI title={'Loader Animation'} src={'elements/loader/loader3.html'} url={'https://github.com/Geeleed/portfolio-next/blob/master/public/elements/loader/loader3.html'} />
                 <CardUI title={'Loader Animation'} src={'elements/loader/loader4.html'} url={'https://github.com/Geeleed/portfolio-next/blob/master/public/elements/loader/loader4.html'} />
             </section>
+            <h1>My APIs Service</h1>
+            <section className={css.myAPI}>
+                <MyAPI
+                    api_name={'SHA-256'}
+                    api_endpoint={'https://math-hub-gamma.vercel.app/sha256/{text}/'}
+                    api_method={'GET'}
+                    api_input={'{text} คือ ข้อความที่ต้องการเข้ารหัส SHA-256'}
+                    api_output={'json เป็น SHA-256 เลขฐาน 16'}
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+                <MyAPI
+                    api_name={'Covert Base'}
+                    api_endpoint={'https://math-hub-gamma.vercel.app/convert_base/{number}/{from_base}/{to_base}/'}
+                    api_method={'GET'}
+                    api_input={'เลขจำนวนเต็ม'}
+                    api_output={'json'}
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+                <MyAPI
+                    api_name={'Random Real Number'}
+                    api_endpoint={'https://math-hub-gamma.vercel.app/random/{min}/{max}/{num}/'}
+                    api_method={'GET'}
+                    api_input={'{min} และ {max} เป็น float และ {num} เป็นจำนวนการสุ่ม'}
+                    api_output={'json เก็บ array ของเลขที่สุ่มได้'}
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+                <MyAPI
+                    api_name={'Permutation'}
+                    api_endpoint={'https://math-hub-gamma.vercel.app/permutation/{n}/{r}/'}
+                    api_method={'GET'}
+                    api_input={'{n} และ {r} เป็นจำนวนเต็ม'}
+                    api_output={'json จำนวนรูปแบบการเรียงสับเปลี่ยนรอบละ r สิ่งจาก n สิ่ง'}
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+                <MyAPI
+                    api_name={'Commutation'}
+                    api_endpoint={'https://math-hub-gamma.vercel.app/commutation/{n}/{r}/'}
+                    api_method={'GET'}
+                    api_input={'{n} และ {r} เป็นจำนวนเต็ม'}
+                    api_output={'json จำนวนรูปแบบการจัดกลุ่มรอบละ r สิ่งจาก n สิ่ง'}
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+                <MyAPI
+                    api_name={'Delay'}
+                    api_endpoint={'https://math-hub-gamma.vercel.app/delay/{second}'}
+                    api_method={'GET'}
+                    api_input={'{second} เวลาเป็นวินาทีที่ทำการรอ'}
+                    api_output={'รอเวลา'}
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+                <MyAPI
+                    api_name={'Linear Fitting'}
+                    api_endpoint={'https://math-hub-gamma.vercel.app/linear-fit-2d/'}
+                    api_method={'POST'}
+                    api_input={'ไฟล์ .csv ที่มี data 2 column'}
+                    api_output={'json ค่าความชัน จุดตัดแกน y และค่าสถิติอื่น ๆ'}
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+
+            </section>
         </div>
     )
 }
@@ -157,5 +210,19 @@ function GitHub({ href }) {
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
             </svg>
         </Link>
+    )
+}
+
+function MyAPI({ api_name, api_endpoint, api_method, api_input, api_output, api_detail, api_href }) {
+    return (
+        <div className={css.api_card}>
+            <h1>{api_name} <GitHub href={api_href} /></h1>
+            <p>Endpoint: {api_endpoint}</p>
+            <p>Method: {api_method}</p>
+            <p>Input: {api_input}</p>
+            <p>Output: {api_output}</p>
+            {api_detail && <p>Detail: {api_detail}</p>}
+            {/* <div>Source </div> */}
+        </div>
     )
 }
