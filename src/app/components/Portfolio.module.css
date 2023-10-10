@@ -393,6 +393,11 @@
     font-size: 1.3rem;
 }
 
+.github>svg:hover{
+    fill: var(--tiny-color);
+    scale: 1.3;
+}
+
 @media (max-width:1024px) {
     .popupDetail>h1 {
         font-size: xx-large;
