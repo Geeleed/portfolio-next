@@ -56,8 +56,6 @@
     position: relative;
 }
 .api_card{
-    /* width: 40rem; */
-    /* height: 10rem; */
     background-color: var(--main-color);
     border: 0.5rem solid var(--sub-color);
     display: flex;

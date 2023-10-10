@@ -213,7 +213,7 @@ function GitHub({ href }) {
     )
 }
 
-function MyAPI({ api_name, api_endpoint, api_method, api_input, api_output, api_detail, api_href }) {
+function MyAPI({ api_name, api_endpoint, api_method, api_input, api_output, api_href }) {
     return (
         <div className={css.api_card}>
             <h1>{api_name} <GitHub href={api_href} /></h1>
@@ -221,8 +221,6 @@ function MyAPI({ api_name, api_endpoint, api_method, api_input, api_output, api_
             <p>Method: {api_method}</p>
             <p>Input: {api_input}</p>
             <p>Output: {api_output}</p>
-            {api_detail && <p>Detail: {api_detail}</p>}
-            {/* <div>Source </div> */}
         </div>
     )
 }
