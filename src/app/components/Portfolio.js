@@ -13,7 +13,7 @@ function Portfolio() {
     const [apis, setApis] = useState(null)
     useEffect(() => {
         fetch('https://back-portfolio-next.vercel.app/getApi').then(res => res.json()).then(data => {
-            setApis(data.map(elem => <MyAPI
+            setApis(data.map((elem,index) => <MyAPI key={index}
                 api_name={elem.api_name}
                 api_endpoint={elem.api_endpoint}
                 api_method={elem.api_method}
