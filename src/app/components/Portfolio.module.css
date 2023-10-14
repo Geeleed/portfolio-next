@@ -45,7 +45,7 @@
     height: 0.7rem;
 }
 
-.myAPI{
+.myAPI {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,20 +55,33 @@
     background-color: #000;
     position: relative;
 }
-.api_card{
+
+.api_card {
     background-color: var(--main-color);
     border: 0.5rem solid var(--sub-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+    /* max-width: 30rem; */
 }
-.api_card>p{
-    font-size: 0.8rem;
+
+.api_card>h1 {
+    color: var(--tiny-color);
 }
-.api_card:hover{
+
+.api_card>p {
+    font-size: 0.6rem;
+}
+
+.api_card>p>strong {
+    color: var(--tiny-color);
+}
+
+.api_card:hover {
     border: 0.5rem solid var(--tiny-color);
 }
+
 .pad {
     display: flex;
     flex-wrap: wrap;
@@ -393,7 +406,7 @@
     font-size: 1.3rem;
 }
 
-.github>svg:hover{
+.github>svg:hover {
     fill: var(--tiny-color);
     scale: 1.3;
 }

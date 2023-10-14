@@ -71,7 +71,7 @@
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     .menu {
         display: none;
     }
@@ -90,4 +90,55 @@
         justify-content: center;
         width: 100%;
     }
+}
+
+.uploadPopup {
+    z-index: 15;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
+    background-color: var(--main-color-8);
+    backdrop-filter: blur(20px);
+    display: grid;
+    place-items: center;
+}
+
+.uploadPopup>form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+.uploadPopup>form>input,.uploadPopup>form>button{
+    background-color: var(--main-color-8);
+    height: 2rem;
+    width: 100%;
+    border: 2px solid var(--sub-color-8);
+    padding: 0.5rem;
+}
+.uploadPopup>form>button{
+    height: 2.5rem;
+    background-color: var(--tiny-color);
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+.uploadPopup>div{
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    cursor: pointer;
+}
+.uploadPopup>div:hover{
+    color: var(--tiny-color);
 }

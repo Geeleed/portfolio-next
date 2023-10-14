@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import css from './Portfolio.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,6 +10,18 @@ import MiniGameCard from './miniApps/MiniGameCard'
 
 function Portfolio() {
     const [popup, setPopup] = useState(null)
+    const [apis, setApis] = useState(null)
+    useEffect(() => {
+        fetch('https://back-portfolio-next.vercel.app/getApi').then(res => res.json()).then(data => {
+            setApis(data.map(elem => <MyAPI
+                api_name={elem.api_name}
+                api_endpoint={elem.api_endpoint}
+                api_method={elem.api_method}
+                api_input={elem.api_input}
+                api_output={elem.api_output}
+                api_href={elem.api_source} />))
+        })
+    }, [])
     return (
         <div id='portfolio' className={css.main}>
             <section className={css.miniProject}>
@@ -77,7 +89,8 @@ function Portfolio() {
             </section>
             <h1>My APIs Service</h1>
             <section className={css.myAPI}>
-                <MyAPI
+                {apis}
+                {/* <MyAPI
                     api_name={'SHA-256'}
                     api_endpoint={'https://math-hub-gamma.vercel.app/sha256/{text}/'}
                     api_method={'GET'}
@@ -132,7 +145,7 @@ function Portfolio() {
                     api_method={'GET'}
                     api_input={'{color_array} ตัวอย่างเช่น [120,200,255] มีโหมด rgb hsl hsv cmyk โดยใช้ช่วงค่า r,g,b [0-255] h[0-360] s,l,v,c,m,y,k [0-1]'}
                     api_output={'json'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
+                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} /> */}
 
             </section>
         </div>
@@ -224,10 +237,10 @@ function MyAPI({ api_name, api_endpoint, api_method, api_input, api_output, api_
     return (
         <div className={css.api_card}>
             <h1>{api_name} <GitHub href={api_href} /></h1>
-            <p>Endpoint: {api_endpoint}</p>
-            <p>Method: {api_method}</p>
-            <p>Input: {api_input}</p>
-            <p>Output: {api_output}</p>
+            <p><strong>Endpoint:</strong> {api_endpoint}</p>
+            <p><strong>Method:</strong> {api_method}</p>
+            <p><strong>Input:</strong> {api_input}</p>
+            <p><strong>Output:</strong> {api_output}</p>
         </div>
     )
 }
