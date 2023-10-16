@@ -90,63 +90,6 @@ function Portfolio() {
             <h1>My APIs Service</h1>
             <section className={css.myAPI}>
                 {apis}
-                {/* <MyAPI
-                    api_name={'SHA-256'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/sha256/{text}/'}
-                    api_method={'GET'}
-                    api_input={'{text} คือ ข้อความที่ต้องการเข้ารหัส SHA-256'}
-                    api_output={'json เป็น SHA-256 เลขฐาน 16'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
-                <MyAPI
-                    api_name={'Covert Base'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/convert_base/{number}/{from_base}/{to_base}/'}
-                    api_method={'GET'}
-                    api_input={'เลขจำนวนเต็ม'}
-                    api_output={'json'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
-                <MyAPI
-                    api_name={'Random Real Number'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/random/{min}/{max}/{num}/'}
-                    api_method={'GET'}
-                    api_input={'{min} และ {max} เป็น float และ {num} เป็นจำนวนการสุ่ม'}
-                    api_output={'json เก็บ array ของเลขที่สุ่มได้'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
-                <MyAPI
-                    api_name={'Permutation'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/permutation/{n}/{r}/'}
-                    api_method={'GET'}
-                    api_input={'{n} และ {r} เป็นจำนวนเต็ม'}
-                    api_output={'json จำนวนรูปแบบการเรียงสับเปลี่ยนรอบละ r สิ่งจาก n สิ่ง'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
-                <MyAPI
-                    api_name={'Commutation'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/commutation/{n}/{r}/'}
-                    api_method={'GET'}
-                    api_input={'{n} และ {r} เป็นจำนวนเต็ม'}
-                    api_output={'json จำนวนรูปแบบการจัดกลุ่มรอบละ r สิ่งจาก n สิ่ง'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
-                <MyAPI
-                    api_name={'Delay'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/delay/{second}'}
-                    api_method={'GET'}
-                    api_input={'{second} เวลาเป็นวินาทีที่ทำการรอ'}
-                    api_output={'รอเวลา'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
-                <MyAPI
-                    api_name={'Linear Fitting'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/linear-fit-2d/'}
-                    api_method={'POST'}
-                    api_input={'ไฟล์ .csv ที่มี data 2 column'}
-                    api_output={'json ค่าความชัน จุดตัดแกน y และค่าสถิติอื่น ๆ'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} />
-                <MyAPI
-                    api_name={'Convert Color Mode'}
-                    api_endpoint={'https://math-hub-gamma.vercel.app/convert-color-mode/{color_array}/{from_mode}/{to_mode}'}
-                    api_method={'GET'}
-                    api_input={'{color_array} ตัวอย่างเช่น [120,200,255] มีโหมด rgb hsl hsv cmyk โดยใช้ช่วงค่า r,g,b [0-255] h[0-360] s,l,v,c,m,y,k [0-1]'}
-                    api_output={'json'}
-                    api_href={'https://github.com/Geeleed/math-hub-api/blob/main/main.py'} /> */}
-
             </section>
         </div>
     )
