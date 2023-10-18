@@ -99,7 +99,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50vw;
-    height: 50vh;
+    /* height: 50vh; */
     background-color: var(--main-color-8);
     backdrop-filter: blur(20px);
     display: grid;
@@ -110,19 +110,22 @@
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 2rem;
 }
-.uploadPopup>form>input,.uploadPopup>form>button{
+
+.uploadPopup>form>input,
+.uploadPopup>form>button {
     background-color: var(--main-color-8);
     height: 2rem;
     width: 100%;
     border: 2px solid var(--sub-color-8);
     padding: 0.5rem;
 }
-.uploadPopup>form>button{
+
+.uploadPopup>form>button {
     height: 2.5rem;
     background-color: var(--tiny-color);
     font-size: 1.7rem;
@@ -132,13 +135,20 @@
     border: none;
     cursor: pointer;
 }
-.uploadPopup>div{
+
+.uploadPopup>form>button:hover {
+    transition: unset;
+    outline: 3px solid var(--sub-color);
+}
+
+.uploadPopup>div {
     font-size: 2rem;
     position: absolute;
     top: 0;
     right: 1rem;
     cursor: pointer;
 }
-.uploadPopup>div:hover{
+
+.uploadPopup>div:hover {
     color: var(--tiny-color);
 }
