@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import css from './Navbar.module.css'
 import Link from 'next/link'

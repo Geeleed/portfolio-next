@@ -12,7 +12,7 @@ function Profile() {
       </div>
       <div className={css.text}>
         <h1>SURASAK KAEWPHO</h1>
-        <p>จบฟิสิกส์และต้องการทำงานด้าน Web Developer (ปัจจุบันกำลังหางาน) มีทักษะคอมพิวเตอร์เบื้องต้น ใช้ภาษา HTML CSS JavaScript React(Next.JS) ได้เบื้องต้น สามารถเชื่อมต่อจัดการข้อมูลใน database และใช้งานหรือพัฒนา API ด้วย Express/Python ในระดับเบื้องต้นได้ ซึ่งส่วนหนึ่งได้ใช้ทำ portfolio นี้ สามารถติดต่อได้ที่ <Link href={'mailto:surasak.kwork@gmail.com'}>surasak.kwork@gmail.com</Link> หรือ social media ที่ส่วน Contact ขอบคุณครับ</p>
+        <p>จบฟิสิกส์และต้องการทำงานด้าน Web Developer (ปัจจุบันกำลังหางาน) มีทักษะคอมพิวเตอร์เบื้องต้น ใช้ภาษา HTML CSS JavaScript React(Next.JS) ได้เบื้องต้น สามารถเชื่อมต่อจัดการข้อมูลใน database และใช้งานหรือพัฒนา API ด้วย Node.js/Python ในระดับเบื้องต้นได้ ซึ่งส่วนหนึ่งได้ใช้ทำ portfolio นี้ สามารถติดต่อได้ที่ <Link href={'mailto:surasak.kwork@gmail.com'}>surasak.kwork@gmail.com</Link> หรือ social media ที่ส่วน Contact ขอบคุณครับ</p>
         <div>
           <Image src={'/images/logo/pngwing.com (16).png'} width={42} height={47} alt=''/>
           <Image src={'/images/logo/pngwing.com (17).png'} width={52} height={50} alt=''/>

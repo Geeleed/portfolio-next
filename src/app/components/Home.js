@@ -1,5 +1,4 @@
-// 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { cloneElement } from 'react'
 import css from './Home.module.css'
 import Link from 'next/link'
 
@@ -33,7 +32,7 @@ function Anim({ numList, elementList }) {
     for (let i = 0; i < elementList.length; i++) {
         let element = elementList[i];
         for (let j = 0; j < numList[i]; j++) {
-            elems.push(React.cloneElement(element, { key: `${i}-${j}` }))
+            elems.push(cloneElement(element, { key: `${i}-${j}` }))
         }
     }
     return (
