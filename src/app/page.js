@@ -1,14 +1,14 @@
 // 'use client'
 // import React, { useEffect, useState } from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Profile from './components/Profile'
-import './globals.css'
-import './CSS.css'
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import Profile from "./components/Profile";
+import "./globals.css";
+import "./CSS.css";
 
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
-import ContactBar from './components/ContactBar'
+import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
+import ContactBar from "./components/ContactBar/ContactBar";
 // import LoadingPage from './components/LoadingPage'
 // function Page() {
 //   const [isLoading, setIsLoading] = useState(true);
@@ -58,7 +58,7 @@ function Page() {
       <Contact />
       <ContactBar />
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;

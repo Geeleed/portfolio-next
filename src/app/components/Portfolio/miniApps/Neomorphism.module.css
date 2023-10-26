@@ -1,0 +1,167 @@
+.main * {
+  @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+  font-family: "Prompt", sans-serif;
+  transition: unset;
+}
+
+.main {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+}
+
+.main > h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.display {
+  height: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun {
+  height: 100%;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.sun > div {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.sun > div:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-radius: 0 0 100% 0;
+}
+
+.sun > div:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 100%;
+}
+
+.sun > div:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 0;
+}
+
+.sun > div:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  border-radius: 100% 0 0 0;
+}
+
+.sun > div > input,
+.sun > div > div {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.sun > div > input {
+  z-index: 1;
+  appearance: none;
+  cursor: pointer;
+}
+
+.sun > div > input:checked ~ div {
+  background-color: yellow;
+}
+
+.object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input1 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-color-3);
+}
+
+.input1 > div {
+  width: 8rem;
+  height: 2rem;
+}
+
+.input1 > div > input,
+.input1 > div > p {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.input1 > div > input {
+  z-index: 1;
+  appearance: none;
+}
+
+.input1 > div > input[type="color"] {
+  border: none;
+  background-color: transparent;
+}
+
+.input1 > div > input:checked ~ p {
+  background-color: var(--main-color-e);
+}
+
+.ctrl > p {
+  background-color: var(--main-color-5);
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.labelInput2 {
+  display: flex;
+}
+
+.labelInput2 > p {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: var(--main-color-5);
+}
+
+.input2 {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+}
+
+.input2 > input {
+  appearance: none;
+  transform-origin: 0;
+  transform: translate(50%, 250%) rotate(-90deg);
+  background-color: transparent;
+  width: 6rem;
+  height: 2rem;
+}
+
+.input2 > input::-webkit-slider-thumb {
+  appearance: none;
+  width: 2rem;
+  height: 8rem;
+  background-color: var(--sub-color-d);
+}

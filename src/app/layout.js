@@ -1,20 +1,20 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Surasak Kaewpho',
-  description: '<Geeleed/>',
-}
+  title: "Surasak Kaewpho",
+  description: "<Geeleed/>",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel='icon' href='svg/myicon.svg' />
+        <link rel="icon" href="svg/myicon.svg" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }

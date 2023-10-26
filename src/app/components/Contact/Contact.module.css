@@ -1,0 +1,205 @@
+.main {
+  padding: 3rem 0rem;
+  min-height: 35rem;
+  background-color: var(--main-color-d);
+  position: relative;
+  /* background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'); */
+  /* background-image: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80'); */
+  /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.main > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40rem;
+  min-height: 30rem;
+  gap: 0.5rem;
+  height: 35rem;
+}
+
+.form > h1 {
+  font-size: 5rem;
+}
+
+.form > input[type="text"] {
+  backdrop-filter: blur(20px);
+  padding: 0.5rem;
+  outline: none;
+  color: var(--sub-color);
+  border: none;
+  background-color: var(--main-color-8);
+  font-size: 1.1rem;
+}
+
+.form > textarea {
+  backdrop-filter: blur(20px);
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  flex-grow: 1;
+  padding: 0.5rem;
+  color: var(--sub-color);
+  background-color: var(--main-color-8);
+}
+
+.form > input[type="submit"] {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  font-size: 1.2rem;
+}
+
+.form > input[type="submit"]:hover {
+  border: 1px solid var(--sub-color);
+  background-color: var(--tiny-color);
+  font-weight: 900;
+}
+
+.webboard {
+  z-index: 1;
+  width: 40rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.webboard > h1 {
+  font-size: 3rem;
+}
+
+.webboard > form {
+  backdrop-filter: blur(20px);
+  background-color: var(--main-color-a);
+  display: flex;
+  flex-direction: column;
+}
+
+.webboard > form > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.webboard > form > div > img {
+  height: 10rem;
+}
+
+.webboardInput {
+  display: flex;
+}
+
+.webboardInput > textarea {
+  height: 7rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+
+.webboardInput > div {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.webboardInput > div > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 5px solid var(--tiny-color);
+  background-color: var(--tiny-color);
+  height: 100%;
+}
+
+.webboardInput > div > p:hover {
+  border: 5px solid var(--sub-color);
+  background-color: var(--main-color);
+}
+
+.webboardInput > div > button {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--main-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.webboardInput > div > button:hover {
+  border: 5px solid var(--sub-color);
+  background-color: var(--tiny-color);
+}
+
+.webboard > article {
+  background-color: var(--main-color-a);
+  overflow-y: scroll;
+}
+
+.webboard > article::-webkit-scrollbar,
+.webboardInput > textarea::-webkit-scrollbar,
+.form > textarea::-webkit-scrollbar {
+  background-color: var(--main-color-5);
+  width: 0.8rem;
+}
+
+.webboard > article::-webkit-scrollbar-thumb,
+.webboardInput > textarea::-webkit-scrollbar-thumb,
+.form > textarea::-webkit-scrollbar-thumb {
+  background-color: var(--tiny-color-a);
+}
+
+.webboardInput > textarea::-webkit-scrollbar-corner,
+.form > textarea::-webkit-scrollbar-corner {
+  background-color: var(--main-color-5);
+}
+
+.poster {
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--sub-color);
+  padding: 0.5rem;
+}
+
+@media (max-width: 650px) {
+  .main {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .form,
+  .webboard {
+    width: 80vw;
+    height: 60vh;
+    min-height: unset;
+  }
+
+  .form > h1,
+  .webboard > h1 {
+    font-size: 2rem;
+  }
+}
